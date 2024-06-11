@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BresoGPT</title>
+    
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-messages" id="chat">
+
+        </div>
+        <div class="input-container">
+
+            <input onkeydown="verificarEnter(event)" id="pergunta" name="pergunta" type="text"
+                placeholder="Digite sua pergunta...">
+            <button id="Enviar">Enviar</button>
+
+        </div>
+    </div>
+</body>
+
+<script src="AI.js"></script>
+<script>
+
+
+
+    //Inicio
+    var txtPergunta;
+    setInterval(() => {
+        txtPergunta = document.getElementById('pergunta').value;
+    }, 1);
+
+    MsgBot(AI(''))
+
+
+
+    function verificarEnter(event) {
+        // Verifica se a tecla pressionada é a tecla "Enter"
+        if (event.key === "Enter") {
+            MsgUsuario(txtPergunta);
+            MsgBot(AI(txtPergunta))
+            document.getElementById('pergunta').value=''
+        }
+    }
+
+    
+    document.getElementById('Enviar').addEventListener('click', () => {
+        MsgUsuario(txtPergunta);
+        MsgBot(AI(txtPergunta))
+        document.getElementById('pergunta').value=''
+    });
+
+    function MsgUsuario(texto) {
+        const chat = document.getElementById('chat');
+        const div = document.createElement('div');
+        div.classList.add('message', 'user-message');
+        div.innerHTML = texto;
+        chat.appendChild(div);
+    }
+
+
+    function MsgBot(texto) {
+        let index = 0;
+
+        function digitar() {
+            div.innerHTML = texto.substring(0, index);
+            index++;
+            document.getElementById('chat').scrollTop = document.getElementById('chat').scrollHeight;
+            if (index <= texto.length) {
+                setTimeout(digitar, 10);
+                document.getElementById('chat').scrollTop = document.getElementById('chat').scrollHeight;
+            }
+        }
+
+        const chat = document.getElementById('chat');
+        const div = document.createElement('div');
+        div.classList.add('message', 'bot-message');
+        chat.appendChild(div);
+        digitar(div);
+    }
+
+
+</script>
+
+</html>
