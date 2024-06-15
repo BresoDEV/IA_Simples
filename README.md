@@ -29,16 +29,16 @@ Para executar o chatbot, abra o arquivo index.html em um navegador web.
 ## Estrutura de Arquivos
 O projeto consiste nos seguintes arquivos:
 
-`index.html`: O arquivo HTML principal para a interface do chatbot.
-`gptStyle.html`: Um arquivo HTML adicional com estilo GPT.
-`whats.html`: Um arquivo HTML para integração com WhatsApp.
-`AI.js`: Contém a lógica principal da IA.
-`addChat.js`: Gerencia a adição e exibição de chats.
-`dev.js`: Script de desenvolvimento.
-`respostasProntas.js`: Contém respostas pré-definidas para o chatbot.
-`voids.js`: Funções utilitárias.
-`img/`: Diretório contendo imagens usadas no projeto.
-`json/`: Diretório contendo dados JSON.
+- `index.html`: O arquivo HTML principal para a interface do chatbot.
+- `gptStyle.html`: Um arquivo HTML adicional com estilo GPT.
+- `whats.html`: Um arquivo HTML para integração com WhatsApp.
+- `AI.js`: Contém a lógica principal da IA.
+- `addChat.js`: Gerencia a adição e exibição de chats.
+- `dev.js`: Script de desenvolvimento.
+- `respostasProntas.js`: Contém respostas pré-definidas para o chatbot.
+- `voids.js`: Funções utilitárias.
+- `img/`: Diretório contendo imagens usadas no projeto.
+- `json/`: Diretório contendo dados JSON.
 
 ##  Contribuindo
 Contribuições são bem-vindas! Por favor, siga estes passos:
