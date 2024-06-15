@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-size: small;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    html {
+        margin: 0;
+        padding: 0;
+        background-color: #d7caca;
+
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .topo {
+        height: 55px;
+        width: 100%;
+        background: #005e54;
+        color: aliceblue;
+        padding: 0 8px;
+        font-size: 24px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+
+    .topo .avatar img {
+        border-radius: 50%;
+        display: block;
+        width: 36px;
+        margin-left: 10px;
+        margin-top: 10px;
+        position: fixed;
+    }
+
+    .topo .nome {
+        font-size: 17px;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        letter-spacing: 0.3px;
+        margin: 10px 0 0 60px;
+        white-space: nowrap;
+        width: auto;
+    }
+
+    .topo .status {
+        font-size: 10px;
+        text-overflow: ellipsis;
+        letter-spacing: 0.3px;
+        margin: 3px 0 0 60px;
+        white-space: nowrap;
+        width: auto;
+    }
+
+    .corpo {
+        background-color: #d7caca;
+        width: 100%;
+        margin-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .minhaMsg {
+        background: #e1ffc7;
+        border-radius: 5px 0px 5px 5px;
+        margin-left: 45%;
+        margin-right: 15px;
+        text-align: left;
+        width: 50%;
+        word-break: normal;
+        padding: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        word-break: break-all;
+    }
+
+    .msgBot {
+        background: #e1ffc7;
+        border-radius: 0px 5px 5px 5px;
+        margin-left: 15px;
+        text-align: left;
+        width: 50%;
+        word-break: normal;
+        padding: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        word-break: break-all;
+    }
+
+    .minhaMsg .hora {
+        background: transparent;
+        border-radius: 5px 0px 5px 5px;
+        float: right;
+        margin-right: 15px;
+        text-align: right;
+        width: 50%;
+        word-break: normal;
+        font-size: smaller;
+        margin-bottom: 10px;
+    }
+
+    .msgBot .hora {
+        background: transparent;
+        border-radius: 5px 0px 5px 5px;
+        float: right;
+        margin-right: 15px;
+        text-align: right;
+        width: 50%;
+        word-break: normal;
+        font-size: smaller;
+        margin-bottom: 10px;
+    }
+
+    .msgBot button {
+        background: rgb(40, 150, 40);
+        border-radius: 5px 5px 5px 5px;
+        border: none;
+        width: 50%;
+        font-size: smaller;
+        margin-top: 3px;
+        color: aliceblue;
+        padding: 4px;
+    }
+
+
+
+
+    .campoMsg {
+        height: 50px;
+        width: 100%;
+        background: #d7caca;
+        color: aliceblue;
+        padding: 10px;
+        font-size: 24px;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        display: flex;
+    }
+
+    td input {
+        width: 95%;
+        background: #fff;
+        color: black;
+        z-index: 1;
+        bottom: 0;
+        margin: 0;
+        padding: 3px;
+        border: none;
+        border-radius: 3px;
+        height: 75%;
+        margin-left: 5px;
+    }
+
+    td button {
+        background: #005e54;
+        color: white;
+        margin: 0;
+        z-index: 1;
+        bottom: 0;
+        border-radius: 2px;
+        margin-left: 5px;
+        font-size: larger;
+        padding: 0;
+        user-select: none;
+        width: 95%;
+        height: 95%;
+    }
+
+    table {
+        height: 50px;
+        width: 95%;
+        font-size: 24px;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    td,
+    tr {
+        width: 100%;
+        min-width: 50px;
+    }
+
+    .leitura {
+        color: cadetblue;
+        animation: visu 3s linear;
+        font-weight: bold;
+    }
+
+    @keyframes visu {
+        0% {
+            color: gray
+        }
+
+        90% {
+            color: gray
+        }
+
+        100% {
+            color: cadetblue
+        }
+    }
+
+
+    .chat_input {
+
+        width: 100%;
+        height: 10%;
+        display: flex;
+        display: flex;
+        align-items: center;
+        background: #005e54;
+        bottom: 0px;
+        position: fixed;
+        margin-top: 0px;
+    }
+
+    .chat_input .in {
+        padding: .5rem;
+        outline: 0;
+        border: none;
+        float: left;
+        margin-left: 10px;
+        width: 90%;
+        border-radius: 6px;
+    }
+
+    .chat_input button {
+        padding: .5rem;
+        outline: 0;
+        border: none;
+        background: #3a875d;
+        color: white;
+        border-radius: 9%;
+        font-size: 1.1rem;
+        margin-left: 2%;
+        margin-right: 5px;
+        float: right;
+        font-family: Arial;
+    }
+</style>
+
+<body id="body">
+    <div class="topo" id="topoBot">
+        <div class="avatar">
+            <img id="fotoLink" alt="">
+
+        </div>
+        <div class="nome" id="nomeBot">Bot CdS EAD</div>
+        <div class="status" id="status">Breso</div>
+    </div>
+
+
+
+    <div class="corpo" id="corpo">&nbsp;
+
+
+
+    </div>
+
+
+
+    <div class="chat_input" id="rodapeBot">
+        <input type="text" id="mensagem" class="in" placeholder="Digite algo...">
+        <button id="enviar" class="send">Enviar</button>
+    </div>
+
+
+
+
+
+
+
+</body>
+<script src="AI.js"></script>
+<script>
+
+
+    //?nome=cu&foto=breso.png&meunome=edu&tempo=2000&tema=0
+
+
+
+    var tempoResposta = 1000;
+    var nomeBot = 'BresoDEV Bot';
+    var fotoperfil = 'img/breso.png';
+    var tema = '0';
+    var nomeUsuario = '';
+
+
+
+
+    document.getElementById('status').innerHTML = 'Visto por ultimo hoje as ' + HoraAntes();
+
+    document.getElementById('nomeBot').innerHTML = nomeBot
+    if (localStorage.getItem('nomeBot')) {
+        document.getElementById('nomeBot').innerHTML = localStorage.getItem('nomeBot');
+    }
+
+
+    document.getElementById('fotoLink').src = fotoperfil
+    if (localStorage.getItem('fotoLink')) {
+        document.getElementById('fotoLink').src = localStorage.getItem('fotoLink');
+    }
+
+    if (localStorage.getItem('tempo')) {
+        tempoResposta = localStorage.getItem('tempo')
+
+    }
+
+    if (localStorage.getItem('topoBot')) {
+        document.getElementById('topoBot').style.backgroundColor = localStorage.getItem('topoBot')
+        document.getElementById('rodapeBot').style.backgroundColor = localStorage.getItem('topoBot')
+        document.getElementById('enviar').style.backgroundColor = localStorage.getItem('topoBot')
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    document.getElementById('enviar').addEventListener('click', () => {
+
+
+        Falar(document.getElementById('mensagem').value);
+        var pergunta = document.getElementById('mensagem').value;
+        document.getElementById('mensagem').value = '';
+
+        var resposta = AI(pergunta);
+
+        var l1 = setInterval(() => {
+            clearInterval(l1);
+            document.getElementById('status').innerHTML = 'Online';
+
+            var l2 = setInterval(() => {
+                clearInterval(l2);
+
+                document.getElementById('status').innerHTML = 'Digitando...';
+
+                var l3 = setInterval(() => {
+                    clearInterval(l3);
+
+                    document.getElementById('status').innerHTML = 'Online';
+                    //aqui exibe a msg
+                    Responder(resposta);
+
+                }, (tempoResposta * 3));
+
+
+            }, (tempoResposta * 2));
+
+        }, tempoResposta);
+    });
+
+
+    function Falar(pergunta) {
+        var conteudoAntigo = document.getElementById('corpo').innerHTML;
+        var conteudoComPergunta = conteudoAntigo + '<div class="minhaMsg">' + pergunta + '<br><span class="hora">' + HoraAtual() + '</span></div>';
+        document.getElementById('corpo').innerHTML = conteudoComPergunta;
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function Responder(resposta) {
+        var conteudoAntigo = document.getElementById('corpo').innerHTML;
+        var conteudoComPergunta = conteudoAntigo + '<div class="msgBot">' + resposta + '<br><span class="hora">' + HoraAtual() + '</span></div>';
+        document.getElementById('corpo').innerHTML = conteudoComPergunta;
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+
+
+    function HoraAtual() {
+        var d = new Date();
+        var h = d.getHours();
+        var t = d.getMinutes();
+        10 > h ? h = '0' + h : h = h;
+        10 > t ? t = '0' + t : t = t;
+        return h + ':' + t;
+    }
+
+    function HoraAntes() {
+        var d = new Date();
+        var h = d.getHours();
+        var t = d.getMinutes();
+        if (t > 5)
+            t = t - 3;
+        else { t = 56; h = h - 1 }
+        10 > h ? h = '0' + h : h = h;
+        10 > t ? t = '0' + t : t = t;
+        return h + ':' + t;
+    }
+
+    function BotaoMsg(palavra, link) {
+        return '<center><a href="' + link + '"><button>' + palavra + '</button></a></center>';
+    }
+    function BotaoMsgDownload(palavra, link) {
+        return '<center><a href="' + link + '" download><button>' + palavra + '</button></a></center>';
+    }
+
+
+
+
+
+</script>
+
+</html>

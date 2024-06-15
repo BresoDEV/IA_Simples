@@ -145,12 +145,14 @@ function addChat(fotoLink = 'img/breso.png', nomeBot = 'BresoDEV Bot', tamanhoCh
         criarMeuBalao(perg);
         chatBox.scrollTop = chatBox.scrollHeight
 
+        var resposta = AI(perg);
+
         setTimeout(() => {
             online.innerHTML = 'Online';
             setTimeout(() => {
                 online.innerHTML = 'Digitando...'
                 setTimeout(() => {
-                    var msg = criarBalaoBot(AI(perg), false);
+                    var msg = criarBalaoBot(resposta, false);
                     //efeitoDigitar(msg,,tt/5)
                     online.innerHTML = 'Online';
                     chatBox.scrollTop = chatBox.scrollHeight

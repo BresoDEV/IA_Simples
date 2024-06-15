@@ -1,7 +1,6 @@
 
 
 //Includes adicionais
-document.write('<script src="loads.js"></script>')
 document.write('<script src="dev.js"></script>')
 document.write('<script src="respostasProntas.js"></script>')
 document.write('<script src="addChat.js"></script>')
@@ -36,7 +35,7 @@ function loadJSONblacklist() {
             if (!response.ok) {
 
             }
-            ///return response.json();
+            return response.json();
         })
         .then(data => {
             blacklist = blacklist.concat(data);
@@ -45,6 +44,7 @@ function loadJSONblacklist() {
 }
 
 loadJSONblacklist()
+
 for (let i = 0; i < 10; i++) {
     Promise.all([
         loadJSON('json/' + i + '.json')
@@ -57,18 +57,53 @@ for (let i = 0; i < 10; i++) {
 
 
 
+var jaDisseOI = false;
 
 
 function AI(pergunta = '') {
 
 
+    //dizer OI se ainda não foi dito
+    if (jaDisseOI == false) {
+        if (DisseOI(pergunta)) {
+            jaDisseOI = true;
+            return addPalavrasChave(BemVindo())
+        }
+    }
+
+    //dizer oque é capaz de fazer
+    if (Oque_Sou_Capaz_De_Fazer(pergunta)) {
+        //-nomeUsuario-
+        return addPalavrasChave(`Além de responder perguntas, consigo fazer algumas outras coisas interessantes-nomeUsuario-. Vou listar algumas:<br>
+        <br>- Adicionar lembretes
+        <br>- Fazer contas matemáticas
+        <br>- Gerar senhas pra você
+        <br>- Gerador de lero-lero (textos sem sentido)
+        <br>- Converter fontes para DarkFont e MiniFont
+        <br>- Posso gerar mensagens de bom dia, boa noite, de amor, amizade, etc...
+        <br>- Gerar textos Lorem
+        <br>- Posso gerar nome de pessoas, personagem, nicknames e locais(cidades,paises,etc)
+        `)
+    }
+
+
     //calculadora
     if (EnviouUmaConta(pergunta)) {
-        return Calcular(pergunta);
+        return addPalavrasChave(Calcular(pergunta));
+    }
+
+    //gerar nome de cidade
+    if (QuerGerarNomeCidade(pergunta)) {
+        return addPalavrasChave(criarNomeCidade());
+    }
+
+    //gerar nome de personagem
+    if (QuerGerarNomePersonagem(pergunta)) {
+        return addPalavrasChave(criarNomePersonagem(pergunta));
     }
 
     //gerar senha
-    if (pergunta.toLowerCase().includes('senha')) {
+    if (pergunta.toLowerCase().includes('senha') || pergunta.toLowerCase().includes('password')) {
         const temnumero = /\d+/.test(pergunta);
         if (temnumero) {
             const r = pergunta.match(/\d+/)
@@ -77,24 +112,45 @@ function AI(pergunta = '') {
         else {
             return addPalavrasChave(gerarSenha());
         }
-        
+
     }
 
     //addLembrete
     if (pergunta.toLowerCase().includes('lembrete')) {
         if (pergunta.toLowerCase().includes('adicionar lembrete ')) {
-            return addPalavrasChave(addLembrete(pergunta));
+            if (pergunta.toLowerCase().includes('(')) {
+                return addPalavrasChave(addLembrete(pergunta));
+            }
+            else {
+                return 'Ops,voce esqueceu de por o lembrete entre parênteses!'
+            }
         }
-        if (pergunta.toLowerCase().includes('remover') ||
-            pergunta.toLowerCase().includes('apagar')||
+        else if (pergunta.toLowerCase().includes('remover') ||
+            pergunta.toLowerCase().includes('apagar') ||
             pergunta.toLowerCase().includes('excluir')) {
-                return addPalavrasChave(apagarLembrete());
+            return addPalavrasChave(apagarLembrete());
         }
-        if (pergunta.toLowerCase().includes('exibir') ||
+        else if (pergunta.toLowerCase().includes('exibir') ||
             pergunta.toLowerCase().includes('listar') ||
             pergunta.toLowerCase().includes('ver') ||
             pergunta.toLowerCase().includes('mostr')) {
-                return addPalavrasChave(exibirLembrete());
+            return addPalavrasChave(exibirLembrete());
+        }
+        else {
+            return addPalavrasChave(`Claro-nomeUsuario-, voce pode adicionar lembretes,exibir e apagar.<br>
+            Veja um exemplo de cada uma delas:<br>
+            <br>
+            <b>Adicionar:</b><br>
+            <br><b>OBS: Texto do lembrete deve ser dentro de parenteses</b><br>
+            adicionar lembrete (ir ao mercado)<br>
+            <br>
+            <b>Listar:</b><br>
+            Quero ver meus lembretes, Exibir meus lembretes, ou qualquer frase parecida<br>
+            <br>
+            <b>Excluir:</b><br>
+            Quero apagar meus lembretes, excluir meus lembretes, ou qualquer frase parecida<br>
+            <br>Aguardo seus lembretes em breve ${escolherEmotionAleatorio(emotionsFeliz)}
+            `)
         }
     }
 
@@ -165,9 +221,17 @@ function AI(pergunta = '') {
         return Dev(pergunta);
     }
 
+
+    //gerar nickname
+    if (pergunta.toLowerCase().includes('nickname')) {
+        return addPalavrasChave(GerarNickname());
+    }
+
+
     pergunta = processarPergunta(pergunta);
     var resposta = 'null';
 
+    //console.log(blacklist)
     blacklist.forEach(palavrao => {
         if (pergunta.includes(palavrao)) {
             resposta = RespostaBlacklist();
@@ -340,12 +404,13 @@ function AI(pergunta = '') {
 
     }
     if (resposta == 'null') {
-        if (pergunta.includes('?')) {
-            resposta = NaoTemConhecimentoDoAssunto();
-        }
-        else if (pergunta.includes('quem ')) {
+        if (pergunta.includes('quem ') && pergunta.includes('?')) {
             resposta = NaoConheceAPessoa();
         }
+        else if (pergunta.includes('?')) {
+            resposta = NaoTemConhecimentoDoAssunto();
+        }
+
         else {
             resposta = NEntendeu();
         }
@@ -361,6 +426,16 @@ function AI(pergunta = '') {
 
 
 
+
+var loop = setInterval(() => {
+    if (neuronio.length >= 100) {
+        clearInterval(loop)
+        console.clear()
+        console.log('Neuronios carregados com sucesso!!')
+        console.log('Cerebros carregados: ' + quantCerebros + ' ')
+        console.log('Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos')
+    }
+}, 1000);
 
 
 

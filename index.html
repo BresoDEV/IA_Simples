@@ -1,63 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BresoAI</title>
+    <script src="AI.js"></script>
 </head>
+<style>
+    html,
+    body {
+        background-color: #333;
+        color: aliceblue;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+    }
+
+    .buttoni {
+        background-color: rgb(56, 105, 56);
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        width: 50%;
+        cursor: pointer;
+        transition: all 1s ease;
+        margin-top: 3px;
+    }
+
+    .buttoni:hover {
+        background-color: rgb(7, 146, 7);
+        scale: 1.05;
+    }
+
+    .texticulo {
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        width: 50%;
+        resize: none;
+    }
+</style>
 
 <body>
-    <p name="" id="i"></p>
+    <center>
 
- <br>
- <button id="addChat">Add Chat a Pagina</button><br>
- <a href="gptStyle.html"><button>gptStyle</button></a>
- 
-<p id="a"></p>
-<p></p>
-<p>adicionar lembrete TEXTO</p>
-<p>fazer contas</p>
-<p>gerar senha</p>
-<p>gerador de lero</p>
-<p>dark font converter</p>
-<p>mini font converter</p>
-<p>msgs automaticas bom dia</p>
-<p>blacklist bloc</p>
-<p></p>
-<p></p>
-<p></p>
- 
+        <h1>BresoAI Script</h1>
+        <p name="" id="i1"></p>
+        <p name="" id="i2"></p>
+        <p name="" id="i3"></p>
 
+    </center>
 </body>
-<script src="AI.js"></script>
-
 <script>
-    
-setTimeout(() => {
-    efeitoDigitar(document.getElementById('i'),AI(''))
-    
+    efeitoDigitar(document.getElementById('i1'), AI(''), 25)
+    setTimeout(() => {
+        efeitoDigitar(document.getElementById('i2'), AI('pode fazer'), 20)
 
-    
-}, 500);
+        setTimeout(() => {
 
-document.getElementById('addChat').addEventListener('click',()=>{
-    addChat()
-})
+            efeitoDigitar(document.getElementById('i3'), AI('implementar'), 25)
 
-    
+            setTimeout(() => {
+                document.body.innerHTML += `
+            <center><button id="addChat" class="buttoni">Adicionar chat de exemplo nessa pagina</button></center>
+            `
+
+                setTimeout(() => {
+                    document.body.innerHTML += `
+                <center><a href="gptStyle.html"><button class="buttoni">Abrir chat modelo ChatGPT</button></center></a>
+                `
+
+                    setTimeout(() => {
+                        document.body.innerHTML += `
+        
+                    <center><a href="whats.html"><button class="buttoni">Abrir chat modelo WhatsApp</button></center></a>
+                    <br><br><br>
+                    `
+                        setTimeout(() => {
+
+                            //document.body.innerHTML += '<center>by BresoDEV</center>'
+
+                            document.getElementById('addChat').addEventListener('click', () => {
+                                addChat()
+                            })
+
+                            clearInterval(downToHell)
 
 
 
-</script>
+
+
+                        }, 50);
 
 
 
 
-<script>
 
 
+                    }, 50);
+                }, 50);
+            }, 13000);
+
+
+        }, 13000);
+
+
+    }, 2000);
+
+
+    var downToHell = setInterval(() => {
+       window.scrollTo(0,document.body.scrollHeight)
+    }, 1);
 </script>
 
 </html>

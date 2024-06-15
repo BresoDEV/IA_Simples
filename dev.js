@@ -72,6 +72,9 @@ function Dev(pergunta) {
 
 
     }
+    else if (pergunta.includes('debug')){
+        return 'Cerebros carregados: ' + quantCerebros + '<br>Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos'
+    }
 
 
 
@@ -138,6 +141,13 @@ function Dev(pergunta) {
     Restaura os padrões originais.<br>
     <b>Exemplo:</b><br>
     <i>$dev reset</i><br>
+    <br>
+    <hr>
+
+    <b>$dev debug</b><br>
+    Exibe infos sobre quantos neuronios e cerebros estão sendo carregados.<br>
+    <b>Exemplo:</b><br>
+    <i>$dev debug</i><br>
     <br>
     <hr>
     `

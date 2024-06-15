@@ -977,96 +977,28 @@
     ,
     {
         "palavras_1": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
+            "what"
         ],
         "palavras_2": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
+            "how"
         ],
         "palavras_3": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
+            "your"
         ],
-        "palavras_4": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
-        ],
-        "palavras_5": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
-        ],
-        "palavras_6": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
-        ],
+        
         "respostas": [
-            " -- "
+            "Sorry-nomeUsuario-, but I cant speak or understand English questions.<br>I understand only Portuguese words &#128533;"
         ]
     },
     {
         "palavras_1": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
+            "implementar"
         ],
         "palavras_2": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
-        ],
-        "palavras_3": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
-        ],
-        "palavras_4": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
-        ],
-        "palavras_5": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
-        ],
-        "palavras_6": [
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- ",
-            " -- "
+            "implementacao"
         ],
         "respostas": [
-            " -- "
+            "Pra implementar nosso script no seu site, apenas adicione essa linha no seu HTML, dentro da tag HEAD:<br><br><textarea class='texticulo' cols='30'><script src='AI.js'></script></textarea><br><br>Pra receber a resposta, utilize o seguinte codigo Javascript:<br><br><textarea class='texticulo' cols='30'>var resposta = AI('Quem é Mr. Bean?');\nconsole.log(resposta);</textarea>"
         ]
     },
     {

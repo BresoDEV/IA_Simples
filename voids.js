@@ -1,5 +1,5 @@
 function efeitoDigitar(elementoDoTexto, texto, velocidade = 50) {
-    
+
     var indexxxxxxxxxxxxxxxxxxxx = 0
     function digitar() {
         elementoDoTexto.innerHTML = texto.substring(0, indexxxxxxxxxxxxxxxxxxxx);
@@ -62,25 +62,19 @@ function addPalavrasChave(r) {
 
 function EnviouUmaConta(r) {
     const cs = /[+\-*/^=]/.test(r);
-    return cs;
+    const temnumero = /\d+/.test(r);
+    if (cs && temnumero)
+        return true;
+    return false
 }
 function Calcular(r) {
     var ns = '';
     try {
-        if (localStorage.getItem('meunome')) {
-            ns = 'Entendi ' + localStorage.getItem('meunome') + ', vamos calcular:<br> <i>' + r + '</i><br> Resultado: <b>' + eval(r) + '</b> ' + escolherEmotionAleatorio(emotionsAleatorios)
-        }
-        else {
-            ns = 'Entendi, vamos calcular:<br><i>' + r + '</i> <br> Resultado: <b>' + eval(r) + '</b> ' + escolherEmotionAleatorio(emotionsAleatorios)
-        }
-    } catch (error) {
-        if (localStorage.getItem('meunome')) {
+        ns = 'Entendi-nomeUsuario-, vamos calcular:<br><i>' + r + '</i> <br> Resultado: <b>' + eval(r) + '</b> ' + escolherEmotionAleatorio(emotionsAleatorios)
 
-            ns = 'Nao entendi sua conta ' + localStorage.getItem('meunome') + ' e não consegui calcular.<br>Por favor, reveja se digitou corretamente ' + escolherEmotionAleatorio(emotionsTriste)
-        }
-        else {
-            ns = 'Nao entendi sua conta e não consegui calcular.<br>Por favor, reveja se digitou corretamente ' + escolherEmotionAleatorio(emotionsTriste)
-        }
+    } catch (error) {
+        ns = 'Nao entendi sua conta-nomeUsuario- e não consegui calcular.<br>Por favor, reveja se digitou corretamente ' + escolherEmotionAleatorio(emotionsTriste)
+
     }
 
 
@@ -1321,7 +1315,10 @@ function gerarSenha(num = 20) {
 
 function addLembrete(lembrete) {
 
-    lembrete = lembrete.replace('adicionar lembrete', '')
+    const re = /\(([^)]+)\)/;
+    lembrete = re.exec(lembrete)[1];
+
+    //lembrete = lembrete.replace('adicionar lembrete', '')
 
     if (localStorage.getItem('lembretes')) {
         var montando = '<li>' + lembrete + '</li>'
@@ -1346,4 +1343,326 @@ function exibirLembrete() {
 function apagarLembrete() {
     localStorage.removeItem('lembretes');
     return 'Pronto-nomeUsuario-, apaguei todos seus lembretes';
+}
+
+
+
+function GerarNickname() {
+    var nome = [
+        "StarGazer",
+        "ShadowHunter",
+        "MoonWalker",
+        "BlazeRider",
+        "IronWolf",
+        "CrystalPhoenix",
+        "ThunderStrike",
+        "MysticMage",
+        "SilverFalcon",
+        "NebulaKnight",
+        "FireDancer",
+        "StormBringer",
+        "GoldenDragon",
+        "NightShade",
+        "LunarLion",
+        "AquaBlade",
+        "CrimsonHawk",
+        "SolarFlare",
+        "FrostTiger",
+        "ElectricEagle",
+        "DarkRaven",
+        "WildSpirit",
+        "StormRider",
+        "SilentShadow",
+        "CobaltKnight",
+        "BlazingArrow",
+        "PhantomWarrior",
+        "EmeraldWarden",
+        "MidnightWanderer",
+        "RadiantFox"
+    ]
+    var claro_aquiEsta = [
+        "Certo-nomeUsuario-, aqui esta uma ideia de nickname:",
+        "Otimo-nomeUsuario-, aqui esta uma ideia de nickname:",
+        "Ok-nomeUsuario-, que tal esse:",
+        "Ok-nomeUsuario-, talvez voce goste de ",
+    ]
+    var indexnome = Math.floor(Math.random() * nome.length);
+    var indexclaro_aquiEsta = Math.floor(Math.random() * claro_aquiEsta.length);
+    return claro_aquiEsta[indexclaro_aquiEsta] + ' <b><i>' + nome[indexnome] + '</i></b>';
+}
+//--------------------------------------------
+
+function QuerGerarNomeCidade(p) {
+
+    let criar = [
+        "crie",
+        "invente",
+        "gere"
+    ]
+    let local = [
+        "cidade",
+        "bairro",
+        "pais",
+        "local",
+    ]
+    let tem = false
+    criar.forEach(c => {
+        local.forEach(l => {
+            //console.log(c + ' ' + l)
+            if (p.toLowerCase().includes(c) && p.toLowerCase().includes(l)) {
+                tem = true;
+            }
+        });
+    });
+    return tem;
+}
+
+function criarNomeCidade() {
+    var nome = [
+        "Avalon",
+        "Rivertown",
+        "Silvervale",
+        "Oakwood",
+        "Harmony Springs",
+        "Havenbrook",
+        "Pinecrest",
+        "Azure Hills",
+        "Evergreen City",
+        "Meadowview",
+        "Stonebridge",
+        "Windsor Falls",
+        "Willow Creek",
+        "Echo Bay",
+        "Golden Ridge",
+        "Crystal Lake",
+        "Sunnydale",
+        "Whispering Pines",
+        "Fairview",
+        "Maplewood",
+        "Wildwood",
+        "Clearwater",
+        "Springfield",
+        "Greenwood",
+        "Peachtree City",
+        "Cedar Hollow",
+        "Blue Harbor",
+        "Moonlight Bay", "Emerald Isle", "Rosewood"
+    ]
+    var claro_aquiEsta = [
+        "Certo-nomeUsuario-, aqui esta uma ideia de nome:",
+        "Otimo-nomeUsuario-, aqui esta uma ideia de nome:",
+        "Ok-nomeUsuario-, que tal esse:",
+        "Ok-nomeUsuario-, talvez voce goste de ",
+    ]
+    var indexnome = Math.floor(Math.random() * nome.length);
+    var indexclaro_aquiEsta = Math.floor(Math.random() * claro_aquiEsta.length);
+    return claro_aquiEsta[indexclaro_aquiEsta] + ' <b><i>' + nome[indexnome] + '</i></b>';
+}
+
+
+
+
+
+
+
+
+function QuerGerarNomePersonagem(p) {
+
+    let criar = [
+        "crie",
+        "invente",
+        "gere"
+    ]
+    let local = [
+        "pessoa",
+        "personagem",
+        "humano",
+    ]
+    let tem = false
+    criar.forEach(c => {
+        local.forEach(l => {
+            //console.log(c + ' ' + l)
+            if (p.toLowerCase().includes(c) && p.toLowerCase().includes(l)) {
+                tem = true;
+            }
+        });
+    });
+    return tem;
+}
+
+function criarNomePersonagem(p) {
+    if (p.toLowerCase().includes('personage') || p.toLowerCase().includes('jogo')) {
+        var nome = [
+            "Shadowblade",
+            "Stormbringer",
+            "Emberheart",
+            "Ironfist",
+            "Frostwind",
+            "Sunfire",
+            "Moonshadow",
+            "Darkwood",
+            "Starfall",
+            "Thunderclaw",
+            "Nightshade",
+            "Stormforge",
+            "Silverlight",
+            "Blackthorn",
+            "Swiftblade",
+            "Shadowbane",
+            "Bloodmoon",
+            "Wintercrest",
+            "Fireheart",
+            "Frostbeard",
+            "Duskmire",
+            "Windchaser",
+            "Darkmoon",
+            "Emberstorm",
+            "Dawnblade",
+            "Skywatcher",
+            "Ironclad",
+            "Stormcaller",
+            "Nightstalker",
+            "Shadowweaver",
+        ]
+        var claro_aquiEsta = [
+
+
+            "Aurora",
+            "Draven",
+            "Lyra",
+            "Viktor",
+            "Seraphina",
+            "Kael",
+            "Elara",
+            "Thorn",
+            "Serenity",
+            "Rex",
+            "Aria",
+            "Gideon",
+            "Luna",
+            "Ragnar",
+            "Elysia",
+            "Faelan",
+            "Nova",
+            "Valen",
+            "Kira",
+            "Xander",
+            "Elowen",
+            "Zephyr",
+            "Sylvan",
+            "Isolde",
+            "Ezra",
+            "Athena",
+            "Darius",
+            "Aurora",
+            "Eldric",
+            "Nyx"
+        ]
+    }
+    else {
+        var nome = [
+
+            "Silva",
+            "Santos",
+            "Oliveira",
+            "Souza",
+            "Pereira",
+            "Rodrigues",
+            "Almeida",
+            "Lima",
+            "Ferreira",
+            "Costa",
+            "Gomes",
+            "Martins",
+            "Ribeiro",
+            "Carvalho",
+            "Melo",
+            "Barbosa",
+            "Araújo",
+            "Cardoso",
+            "Nunes",
+            "Borges"
+        ]
+        var claro_aquiEsta = [
+
+            "Ana",
+            "Bruno",
+            "Carla",
+            "Daniel",
+            "Eduarda",
+            "Fernando",
+            "Gabriela",
+            "Hugo",
+            "Isabela",
+            "João",
+            "Lucas",
+            "Mariana",
+            "Nathan",
+            "Olivia",
+            "Pedro",
+            "Renata",
+            "Samuel",
+            "Tatiana"
+        ]
+    }
+
+    var indexnome = Math.floor(Math.random() * nome.length);
+    var indexclaro_aquiEsta = Math.floor(Math.random() * claro_aquiEsta.length);
+    return 'Certo-nomeUsuario-, aqui esta uma ideia de nome: <b><i>' + claro_aquiEsta[indexclaro_aquiEsta] + ' ' + nome[indexnome] + '</i></b>';
+}
+
+
+function DisseOI(p) {
+
+    p = processarPergunta(p);
+
+    let ois = [
+        "oi",
+        "ola",
+        "hello",
+        "oii",
+        "hey",
+        "tudo bem",
+        "td bem",
+        "bom dia",
+        "boa tarde",
+        "boa noite",
+    ]
+    let tem = false
+    ois.forEach(c => {
+        if (p.includes(c)) {
+            tem = true;
+        }
+    });
+    return tem;
+}
+
+function Oque_Sou_Capaz_De_Fazer(p){
+
+    p = processarPergunta(p);
+
+    let criar = [
+        "pode",
+        "consegue",
+        "capaz",
+        "capas",
+        "sabe",
+    ]
+    let local = [
+        "fazer",
+        "realizar",
+        "responde",
+        "executa",
+    ]
+    
+    let tem = false
+    criar.forEach(c => {
+        local.forEach(l => {
+            //console.log(c + ' ' + l)
+            if (p.toLowerCase().includes(c) && p.toLowerCase().includes(l)) {
+                tem = true;
+            }
+        });
+    });
+    return tem;
 }

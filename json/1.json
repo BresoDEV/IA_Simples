@@ -17,8 +17,18 @@
             "lorem",
             "ipsum"
         ],
-        "respostas": [
-            "Voce deve ser desenvolvedor web, pra me mandar isso!"
+        "palavras_2": [
+            "lorem"
+        ],
+        "respostas": [ 
+            "Entendi-nomeUsuario-, aqui esta um exemplo:<br><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum, sit recusandae laudantium debitis omnis nisi nulla, quia cumque corrupti dolor corporis quasi magnam et? Nostrum maiores molestiae rem alias?</b>",
+            "Certo-nomeUsuario-, aqui esta um exemplo:<br><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi porro iure, eaque cum temporibus doloremque odit animi aliquam explicabo fuga soluta! Reiciendis eum quos in pariatur amet accusantium! Ratione.</b>",
+            "Muito bem-nomeUsuario-, aqui esta um exemplo:<br><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem in praesentium corporis delectus velit voluptates! Soluta aspernatur sint aperiam, quibusdam adipisci nemo, dicta autem corrupti voluptatem eaque tenetur reprehenderit!</b>",
+            "Aqui esta um exemplo:<br><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, exercitationem itaque deserunt similique necessitatibus quia ut vel assumenda est facilis rerum! Aliquid aut harum eveniet earum, debitis fugit quaerat laudantium.</b>",
+            "Entendi-nomeUsuario-, aqui esta um exemplo que preparei:<br><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam at iste nam veritatis rem perspiciatis voluptatum nisi. Quod, odio dolor! Reiciendis quod rem hic excepturi cumque nulla architecto temporibus nostrum?</b>",
+            "Entendi-nomeUsuario-, aqui esta um exemplo simples:<br><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis vero ipsum vitae incidunt? Dolores odio consectetur, corporis laborum libero reprehenderit magni assumenda, dolor culpa impedit exercitationem adipisci sit nemo ad?</b>",
+            "Certo-nomeUsuario-, aqui esta um exemplo que fiz:<br><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aut delectus reprehenderit dolorum reiciendis quod tenetur optio dicta porro, consequuntur nisi praesentium eveniet odio deserunt? Perspiciatis odio dolor ipsam id!</b>",
+            "Entendi-nomeUsuario-, vou mandar um exemplo:<br><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure minima ducimus et, nam autem expedita molestiae soluta sint ipsa nobis ad totam inventore magnam odio quidem suscipit sed debitis.</b>"
         ]
     },
     {
@@ -426,6 +436,10 @@
             "conta",
             "piada"
         ],
+        "palavras_2": [
+            "conte",
+            "piada"
+        ],
         "respostas": [
             "Por que o livro de matemática está sempre triste? Porque tem demasiados problemas.",
             "Como se organiza uma festa espacial? Você planeja.",
@@ -504,7 +518,7 @@
             "bresodev"
         ],
         "respostas": [
-            "<img src=\"breso.png\" alt=\"\" style=\"width:100%\" srcset=\"\">"
+            "<img src=\"img/breso.png\" alt=\"\" style=\"width:50%\" srcset=\"\">"
         ]
     },
     {
@@ -512,8 +526,8 @@
             "cyrax"
         ],
         "respostas": [
-            "<center><img src=\"img/cyrax.gif\" alt=\"\" style=\"width:30%\" srcset=\"\"></center>",
-            "<center><img src=\"img/cyrax2.gif\" alt=\"\" style=\"width:30%\" srcset=\"\"></center>"
+            "<center><img src=\"img/cyrax.gif\" alt=\"\"  style=\"border:none;background-color:transparent;width:30%\" srcset=\"\"></center>",
+            "<center><img src=\"img/cyrax2.gif\" alt=\"\" style=\"border:none;background-color:transparent;width:30%\" srcset=\"\"></center>"
         ]
     },
     {
@@ -899,7 +913,7 @@
         ],
         "palavras_2": [
             "primeiro",
-            "pc"
+            " pc"
         ],
         "respostas": [
             "O primeiro computador foi criado em 1936, conhecido como o ENIAC (Electronic Numerical Integrator and Computer), desenvolvido pelos cientistas John W. Mauchly e J. Presper Eckert.",
@@ -977,6 +991,11 @@
         "palavras_8": [
             "quem",
             "criou",
+            "carro"
+        ],
+        "palavras_9": [
+            "quem",
+            "criador",
             "carro"
         ],
         "respostas": [
@@ -1143,19 +1162,17 @@
         "palavras_3": [
             "depress"
         ],
-        
         "respostas": [
             "O tratamento da depressão e ansiedade pode envolver uma abordagem multifacetada. Consulte um profissional de saúde mental para terapia, considere medicamentos prescritos e adote práticas como exercícios físicos e mindfulness.",
             "Para tratar a depressão e ansiedade, é recomendável buscar a orientação de um profissional de saúde mental. Terapia, medicamentos prescritos e práticas como exercícios físicos e mindfulness podem ser parte do tratamento.",
-             "O tratamento da depressão e ansiedade pode incluir diversas abordagens. Procure um profissional de saúde mental para terapia, discuta a possibilidade de medicamentos e incorpore práticas como exercícios físicos e mindfulness.",
-             "Para tratar a depressão e ansiedade, é aconselhável consultar um profissional de saúde mental. Terapia, medicamentos prescritos e práticas como exercícios físicos e mindfulness podem ser componentes importantes do tratamento.",
-             "O tratamento da depressão e ansiedade pode envolver uma abordagem multifacetada. Consulte um profissional de saúde mental para terapia, considere medicamentos prescritos e adote práticas como exercícios físicos e mindfulness.",
-             "Para tratar a depressão e ansiedade, é recomendável buscar a orientação de um profissional de saúde mental. Terapia, medicamentos prescritos e práticas como exercícios físicos e mindfulness podem ser parte do tratamento.",
+            "O tratamento da depressão e ansiedade pode incluir diversas abordagens. Procure um profissional de saúde mental para terapia, discuta a possibilidade de medicamentos e incorpore práticas como exercícios físicos e mindfulness.",
+            "Para tratar a depressão e ansiedade, é aconselhável consultar um profissional de saúde mental. Terapia, medicamentos prescritos e práticas como exercícios físicos e mindfulness podem ser componentes importantes do tratamento.",
+            "O tratamento da depressão e ansiedade pode envolver uma abordagem multifacetada. Consulte um profissional de saúde mental para terapia, considere medicamentos prescritos e adote práticas como exercícios físicos e mindfulness.",
+            "Para tratar a depressão e ansiedade, é recomendável buscar a orientação de um profissional de saúde mental. Terapia, medicamentos prescritos e práticas como exercícios físicos e mindfulness podem ser parte do tratamento.",
             "O tratamento da depressão e ansiedade pode incluir diversas abordagens. Procure um profissional de saúde mental para terapia, discuta a possibilidade de medicamentos e incorpore práticas como exercícios físicos e mindfulness.",
             "Para tratar a depressão e ansiedade, é aconselhável consultar um profissional de saúde mental. Terapia, medicamentos prescritos e práticas como exercícios físicos e mindfulness podem ser componentes importantes do tratamento.",
             "O tratamento da depressão e ansiedade pode envolver uma abordagem multifacetada. Consulte um profissional de saúde mental para terapia, considere medicamentos prescritos e adote práticas como exercícios físicos e mindfulness.",
             "Para tratar a depressão e ansiedade, é recomendável buscar a orientação de um profissional de saúde mental. Terapia, medicamentos prescritos e práticas como exercícios físicos e mindfulness podem ser parte do tratamento."
-          
         ]
     },
     {
@@ -1178,15 +1195,14 @@
         "respostas": [
             "A primeira bicicleta, conhecida como 'Laufmaschine' ou 'Máquina de Correr', foi inventada por Karl Drais em 1817.",
             "Karl Drais é o inventor da primeira bicicleta, chamada 'Laufmaschine' ou 'Máquina de Correr', criada em 1817.",
-             "A primeira bicicleta, conhecida como 'Laufmaschine' ou 'Máquina de Correr', foi inventada por Karl Drais em 1817.",
-             "Karl Drais é o inventor da primeira bicicleta, chamada 'Laufmaschine' ou 'Máquina de Correr', criada em 1817.",
-             "A primeira bicicleta, conhecida como 'Laufmaschine' ou 'Máquina de Correr', foi inventada por Karl Drais em 1817.",
-             "Karl Drais é o inventor da primeira bicicleta, chamada 'Laufmaschine' ou 'Máquina de Correr', criada em 1817.",
+            "A primeira bicicleta, conhecida como 'Laufmaschine' ou 'Máquina de Correr', foi inventada por Karl Drais em 1817.",
+            "Karl Drais é o inventor da primeira bicicleta, chamada 'Laufmaschine' ou 'Máquina de Correr', criada em 1817.",
+            "A primeira bicicleta, conhecida como 'Laufmaschine' ou 'Máquina de Correr', foi inventada por Karl Drais em 1817.",
+            "Karl Drais é o inventor da primeira bicicleta, chamada 'Laufmaschine' ou 'Máquina de Correr', criada em 1817.",
             "A primeira bicicleta, conhecida como 'Laufmaschine' ou 'Máquina de Correr', foi inventada por Karl Drais em 1817.",
             "Karl Drais é o inventor da primeira bicicleta, chamada 'Laufmaschine' ou 'Máquina de Correr', criada em 1817.",
             "A primeira bicicleta, conhecida como 'Laufmaschine' ou 'Máquina de Correr', foi inventada por Karl Drais em 1817.",
             "Karl Drais é o inventor da primeira bicicleta, chamada 'Laufmaschine' ou 'Máquina de Correr', criada em 1817."
-          
         ]
     },
     {
@@ -1197,59 +1213,52 @@
         "palavras_2": [
             "breaking bad"
         ],
-        
         "respostas": [
             "Breaking Bad é uma aclamada série de televisão criada por Vince Gilligan. A trama segue a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
             "A série Breaking Bad, criada por Vince Gilligan, é reconhecida pela trama envolvente que narra a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
-             "Breaking Bad é uma série de televisão aclamada, criada por Vince Gilligan, que explora a jornada de Walter White, um professor de química, para se tornar um fabricante de metanfetaminas após ser diagnosticado com câncer.",
-             "A série Breaking Bad, criada por Vince Gilligan, é conhecida por sua trama envolvente que acompanha a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
-             "Breaking Bad é uma aclamada série de televisão criada por Vince Gilligan. A trama segue a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
-             "A série Breaking Bad, criada por Vince Gilligan, é reconhecida pela trama envolvente que narra a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
+            "Breaking Bad é uma série de televisão aclamada, criada por Vince Gilligan, que explora a jornada de Walter White, um professor de química, para se tornar um fabricante de metanfetaminas após ser diagnosticado com câncer.",
+            "A série Breaking Bad, criada por Vince Gilligan, é conhecida por sua trama envolvente que acompanha a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
+            "Breaking Bad é uma aclamada série de televisão criada por Vince Gilligan. A trama segue a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
+            "A série Breaking Bad, criada por Vince Gilligan, é reconhecida pela trama envolvente que narra a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
             "Breaking Bad é uma série de televisão aclamada, criada por Vince Gilligan, que explora a jornada de Walter White, um professor de química, para se tornar um fabricante de metanfetaminas após ser diagnosticado com câncer.",
             "A série Breaking Bad, criada por Vince Gilligan, é conhecida por sua trama envolvente que acompanha a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
             "Breaking Bad é uma aclamada série de televisão criada por Vince Gilligan. A trama segue a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer.",
             "A série Breaking Bad, criada por Vince Gilligan, é reconhecida pela trama envolvente que narra a transformação de Walter White, um professor de química, em um fabricante de metanfetaminas após ser diagnosticado com câncer."
-          
         ]
     },
     {
         "palavras_1": [
             "peaky",
             "blinder"
-           
         ],
-        
         "respostas": [
             "Peaky Blinders é uma série de televisão britânica criada por Steven Knight. A trama segue a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
             "A série Peaky Blinders, criada por Steven Knight, é reconhecida por acompanhar a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
-             "Peaky Blinders é uma renomada série de televisão britânica, criada por Steven Knight, que segue a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
-             "A série Peaky Blinders, criada por Steven Knight, é conhecida por acompanhar a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
-             "Peaky Blinders é uma série de televisão britânica criada por Steven Knight. A trama segue a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
-             "A série Peaky Blinders, criada por Steven Knight, é reconhecida por acompanhar a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
+            "Peaky Blinders é uma renomada série de televisão britânica, criada por Steven Knight, que segue a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
+            "A série Peaky Blinders, criada por Steven Knight, é conhecida por acompanhar a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
+            "Peaky Blinders é uma série de televisão britânica criada por Steven Knight. A trama segue a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
+            "A série Peaky Blinders, criada por Steven Knight, é reconhecida por acompanhar a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
             "Peaky Blinders é uma renomada série de televisão britânica, criada por Steven Knight, que segue a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
             "A série Peaky Blinders, criada por Steven Knight, é conhecida por acompanhar a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
             "Peaky Blinders é uma série de televisão britânica criada por Steven Knight. A trama segue a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas.",
             "A série Peaky Blinders, criada por Steven Knight, é reconhecida por acompanhar a família Shelby, liderada por Tommy Shelby, em Birmingham após a Primeira Guerra Mundial, envolvida em atividades criminosas e políticas."
-          
         ]
     },
     {
         "palavras_1": [
             "hitler"
         ],
-        
         "respostas": [
             "Adolf Hitler foi um político alemão que se tornou o líder do Partido Nazista. Ele foi o Chanceler da Alemanha de 1933 a 1945 e desempenhou um papel central no desencadeamento da Segunda Guerra Mundial.",
             "Adolf Hitler foi um político alemão, líder do Partido Nazista. Ele ocupou o cargo de Chanceler da Alemanha de 1933 a 1945 e teve um papel crucial no início da Segunda Guerra Mundial.",
-             "Adolf Hitler foi um político alemão que se tornou líder do Partido Nazista. Ele serviu como Chanceler da Alemanha de 1933 a 1945 e teve um papel significativo no início da Segunda Guerra Mundial.",
-             "Adolf Hitler foi um político alemão, líder do Partido Nazista. Ele ocupou o cargo de Chanceler da Alemanha de 1933 a 1945 e teve um papel crucial no início da Segunda Guerra Mundial.",
-             "Adolf Hitler foi um político alemão que se tornou o líder do Partido Nazista. Ele foi o Chanceler da Alemanha de 1933 a 1945 e desempenhou um papel central no desencadeamento da Segunda Guerra Mundial.",
-             "Adolf Hitler foi um político alemão, líder do Partido Nazista. Ele ocupou o cargo de Chanceler da Alemanha de 1933 a 1945 e teve um papel crucial no início da Segunda Guerra Mundial.",
+            "Adolf Hitler foi um político alemão que se tornou líder do Partido Nazista. Ele serviu como Chanceler da Alemanha de 1933 a 1945 e teve um papel significativo no início da Segunda Guerra Mundial.",
+            "Adolf Hitler foi um político alemão, líder do Partido Nazista. Ele ocupou o cargo de Chanceler da Alemanha de 1933 a 1945 e teve um papel crucial no início da Segunda Guerra Mundial.",
+            "Adolf Hitler foi um político alemão que se tornou o líder do Partido Nazista. Ele foi o Chanceler da Alemanha de 1933 a 1945 e desempenhou um papel central no desencadeamento da Segunda Guerra Mundial.",
+            "Adolf Hitler foi um político alemão, líder do Partido Nazista. Ele ocupou o cargo de Chanceler da Alemanha de 1933 a 1945 e teve um papel crucial no início da Segunda Guerra Mundial.",
             "Adolf Hitler foi um político alemão que se tornou líder do Partido Nazista. Ele serviu como Chanceler da Alemanha de 1933 a 1945 e teve um papel significativo no início da Segunda Guerra Mundial.",
             "Adolf Hitler foi um político alemão, líder do Partido Nazista. Ele ocupou o cargo de Chanceler da Alemanha de 1933 a 1945 e teve um papel crucial no início da Segunda Guerra Mundial.",
             "Adolf Hitler foi um político alemão que se tornou o líder do Partido Nazista. Ele foi o Chanceler da Alemanha de 1933 a 1945 e desempenhou um papel central no desencadeamento da Segunda Guerra Mundial.",
             "Adolf Hitler foi um político alemão, líder do Partido Nazista. Ele ocupou o cargo de Chanceler da Alemanha de 1933 a 1945 e teve um papel crucial no início da Segunda Guerra Mundial."
-          
         ]
     },
     {
@@ -1262,19 +1271,17 @@
             "bin",
             "laden"
         ],
-        
         "respostas": [
             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
-             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
-             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
-             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
-             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
+            "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
+            "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
+            "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
+            "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos.",
             "Osama Bin Laden foi um líder terrorista saudita e fundador da organização extremista islâmica Al-Qaeda. Ele foi responsável pelo planejamento e execução dos ataques de 11 de setembro de 2001 nos Estados Unidos."
-          
         ]
     },
     {
@@ -1282,19 +1289,17 @@
             "formula",
             "agua"
         ],
-        
         "respostas": [
             "A fórmula química da água é H₂O, indicando que cada molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
             "A água tem a fórmula química H₂O, o que significa que cada molécula é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
-             "A fórmula química da água é H₂O, indicando que cada molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
-             "A água tem a fórmula química H₂O, o que significa que cada molécula é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
-             "A fórmula química da água é H₂O, indicando que cada molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
-             "A água tem a fórmula química H₂O, o que significa que cada molécula é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
+            "A fórmula química da água é H₂O, indicando que cada molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
+            "A água tem a fórmula química H₂O, o que significa que cada molécula é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
+            "A fórmula química da água é H₂O, indicando que cada molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
+            "A água tem a fórmula química H₂O, o que significa que cada molécula é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
             "A fórmula química da água é H₂O, indicando que cada molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
             "A água tem a fórmula química H₂O, o que significa que cada molécula é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
             "A fórmula química da água é H₂O, indicando que cada molécula de água é composta por dois átomos de hidrogênio e um átomo de oxigênio.",
             "A água tem a fórmula química H₂O, o que significa que cada molécula é composta por dois átomos de hidrogênio e um átomo de oxigênio."
-          
         ]
     },
     {
@@ -1326,19 +1331,17 @@
             "",
             ""
         ],
-        
         "respostas": [
             "A televisão foi inventada por Philo Farnsworth. Ele desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida em 1927.",
             "A televisão foi inventada por Philo Farnsworth em 1927, que desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida.",
-             "A televisão foi inventada por Philo Farnsworth. Ele desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida em 1927.",
-             "A televisão foi inventada por Philo Farnsworth em 1927, que desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida.",
-             "A televisão foi inventada por Philo Farnsworth. Ele desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida em 1927.",
-             "A televisão foi inventada por Philo Farnsworth em 1927, que desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida.",
+            "A televisão foi inventada por Philo Farnsworth. Ele desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida em 1927.",
+            "A televisão foi inventada por Philo Farnsworth em 1927, que desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida.",
+            "A televisão foi inventada por Philo Farnsworth. Ele desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida em 1927.",
+            "A televisão foi inventada por Philo Farnsworth em 1927, que desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida.",
             "A televisão foi inventada por Philo Farnsworth. Ele desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida em 1927.",
             "A televisão foi inventada por Philo Farnsworth em 1927, que desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida.",
             "A televisão foi inventada por Philo Farnsworth. Ele desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida em 1927.",
             "A televisão foi inventada por Philo Farnsworth em 1927, que desenvolveu o sistema de transmissão de televisão eletrônica e realizou a primeira transmissão bem-sucedida."
-          
         ]
     },
     {
@@ -1373,15 +1376,14 @@
         "respostas": [
             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
-             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
-             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
-             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
-             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
+            "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
+            "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
+            "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
+            "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico.",
             "O rádio foi inventado por Guglielmo Marconi, considerado o pai da radiodifusão. A primeira transmissão de rádio ocorreu em 1901, quando Marconi enviou sinais através do Atlântico."
-          
         ]
     },
     {
@@ -1400,19 +1402,17 @@
             "lua",
             "pessoa"
         ],
-        
         "respostas": [
             "O primeiro homem a pisar na lua foi Neil Armstrong. Ele fez história em 20 de julho de 1969, durante a missão Apollo 11.",
             "Neil Armstrong foi o primeiro homem a pisar na lua, marcando esse feito histórico em 20 de julho de 1969, durante a missão Apollo 11.",
-             "O primeiro homem a pisar na lua foi Neil Armstrong. Ele fez história em 20 de julho de 1969, durante a missão Apollo 11.",
-             "Neil Armstrong foi o primeiro homem a pisar na lua, marcando esse feito histórico em 20 de julho de 1969, durante a missão Apollo 11.",
-             "O primeiro homem a pisar na lua foi Neil Armstrong. Ele fez história em 20 de julho de 1969, durante a missão Apollo 11.",
-             "Neil Armstrong foi o primeiro homem a pisar na lua, marcando esse feito histórico em 20 de julho de 1969, durante a missão Apollo 11.",
+            "O primeiro homem a pisar na lua foi Neil Armstrong. Ele fez história em 20 de julho de 1969, durante a missão Apollo 11.",
+            "Neil Armstrong foi o primeiro homem a pisar na lua, marcando esse feito histórico em 20 de julho de 1969, durante a missão Apollo 11.",
+            "O primeiro homem a pisar na lua foi Neil Armstrong. Ele fez história em 20 de julho de 1969, durante a missão Apollo 11.",
+            "Neil Armstrong foi o primeiro homem a pisar na lua, marcando esse feito histórico em 20 de julho de 1969, durante a missão Apollo 11.",
             "O primeiro homem a pisar na lua foi Neil Armstrong. Ele fez história em 20 de julho de 1969, durante a missão Apollo 11.",
             "Neil Armstrong foi o primeiro homem a pisar na lua, marcando esse feito histórico em 20 de julho de 1969, durante a missão Apollo 11.",
             "O primeiro homem a pisar na lua foi Neil Armstrong. Ele fez história em 20 de julho de 1969, durante a missão Apollo 11.",
             "Neil Armstrong foi o primeiro homem a pisar na lua, marcando esse feito histórico em 20 de julho de 1969, durante a missão Apollo 11."
-          
         ]
     },
     {
@@ -1420,19 +1420,17 @@
             "sentido",
             "vida"
         ],
-        
         "respostas": [
             "A questão sobre o sentido da vida é complexa e muitas vezes subjetiva. Diferentes pessoas podem encontrar significado de maneiras diversas, seja por meio de relações, conquistas pessoais ou valores.",
             "O sentido da vida é uma questão profunda e subjetiva. Pode variar para cada pessoa, sendo encontrado em relações, conquistas pessoais ou valores importantes.",
-             "A questão sobre o sentido da vida é complexa e muitas vezes subjetiva. Diferentes pessoas podem encontrar significado de maneiras diversas, seja por meio de relações, conquistas pessoais ou valores.",
-             "O sentido da vida é uma questão profunda e subjetiva. Pode variar para cada pessoa, sendo encontrado em relações, conquistas pessoais ou valores importantes.",
-             "A questão sobre o sentido da vida é complexa e muitas vezes subjetiva. Diferentes pessoas podem encontrar significado de maneiras diversas, seja por meio de relações, conquistas pessoais ou valores.",
-             "O sentido da vida é uma questão profunda e subjetiva. Pode variar para cada pessoa, sendo encontrado em relações, conquistas pessoais ou valores importantes.",
+            "A questão sobre o sentido da vida é complexa e muitas vezes subjetiva. Diferentes pessoas podem encontrar significado de maneiras diversas, seja por meio de relações, conquistas pessoais ou valores.",
+            "O sentido da vida é uma questão profunda e subjetiva. Pode variar para cada pessoa, sendo encontrado em relações, conquistas pessoais ou valores importantes.",
+            "A questão sobre o sentido da vida é complexa e muitas vezes subjetiva. Diferentes pessoas podem encontrar significado de maneiras diversas, seja por meio de relações, conquistas pessoais ou valores.",
+            "O sentido da vida é uma questão profunda e subjetiva. Pode variar para cada pessoa, sendo encontrado em relações, conquistas pessoais ou valores importantes.",
             "A questão sobre o sentido da vida é complexa e muitas vezes subjetiva. Diferentes pessoas podem encontrar significado de maneiras diversas, seja por meio de relações, conquistas pessoais ou valores.",
             "O sentido da vida é uma questão profunda e subjetiva. Pode variar para cada pessoa, sendo encontrado em relações, conquistas pessoais ou valores importantes.",
             "A questão sobre o sentido da vida é complexa e muitas vezes subjetiva. Diferentes pessoas podem encontrar significado de maneiras diversas, seja por meio de relações, conquistas pessoais ou valores.",
             "O sentido da vida é uma questão profunda e subjetiva. Pode variar para cada pessoa, sendo encontrado em relações, conquistas pessoais ou valores importantes."
-          
         ]
     },
     {
@@ -1440,19 +1438,17 @@
             "velocidade",
             "luz"
         ],
-        
         "respostas": [
             "A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo.",
             "No vácuo, a velocidade da luz é de cerca de 299.792 quilômetros por segundo.",
-             "A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo.",
-             "No vácuo, a velocidade da luz é de cerca de 299.792 quilômetros por segundo.",
-             "A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo.",
-             "No vácuo, a velocidade da luz é de cerca de 299.792 quilômetros por segundo.",
+            "A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo.",
+            "No vácuo, a velocidade da luz é de cerca de 299.792 quilômetros por segundo.",
+            "A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo.",
+            "No vácuo, a velocidade da luz é de cerca de 299.792 quilômetros por segundo.",
             "A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo.",
             "No vácuo, a velocidade da luz é de cerca de 299.792 quilômetros por segundo.",
             "A velocidade da luz no vácuo é de aproximadamente 299.792 quilômetros por segundo.",
             "No vácuo, a velocidade da luz é de cerca de 299.792 quilômetros por segundo."
-          
         ]
     },
     {
@@ -1463,16 +1459,14 @@
         "respostas": [
             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
-             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
-             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
-             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
-             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
+            "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
+            "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
+            "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
+            "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo.",
             "A velocidade do som varia dependendo do meio em que se propaga. No ar, a uma temperatura média, é aproximadamente 343 metros por segundo."
-          
-              
         ]
     },
     {
@@ -1480,19 +1474,17 @@
             "energia",
             "nuclear"
         ],
-       
         "respostas": [
             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
-             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
-             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
-             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
-             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
+            "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
+            "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
+            "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
+            "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade.",
             "A energia nuclear é obtida através do processo de fissão nuclear, no qual núcleos de átomos pesados são divididos, liberando uma grande quantidade de energia. Esse processo é utilizado em usinas nucleares para gerar eletricidade."
-          
         ]
     },
     {
@@ -1500,38 +1492,34 @@
             "hidroeletrica",
             "funciona"
         ],
-       
         "respostas": [
             "Uma usina hidroelétrica converte a energia da água em eletricidade. A água em movimento, geralmente de um rio represado, gira turbinas que estão conectadas a geradores, produzindo energia elétrica.",
             "O funcionamento de uma usina hidroelétrica envolve a conversão da energia da água em eletricidade. A água em movimento, represada em um rio, gira turbinas conectadas a geradores, gerando energia elétrica.",
-             "Uma usina hidroelétrica converte a energia da água em eletricidade. A água em movimento, geralmente de um rio represado, gira turbinas que estão conectadas a geradores, produzindo energia elétrica.",
-             "O funcionamento de uma usina hidroelétrica envolve a conversão da energia da água em eletricidade. A água em movimento, represada em um rio, gira turbinas conectadas a geradores, gerando energia elétrica.",
-             "Uma usina hidroelétrica converte a energia da água em eletricidade. A água em movimento, geralmente de um rio represado, gira turbinas que estão conectadas a geradores, produzindo energia elétrica.",
-             "O funcionamento de uma usina hidroelétrica envolve a conversão da energia da água em eletricidade. A água em movimento, represada em um rio, gira turbinas conectadas a geradores, gerando energia elétrica.",
+            "Uma usina hidroelétrica converte a energia da água em eletricidade. A água em movimento, geralmente de um rio represado, gira turbinas que estão conectadas a geradores, produzindo energia elétrica.",
+            "O funcionamento de uma usina hidroelétrica envolve a conversão da energia da água em eletricidade. A água em movimento, represada em um rio, gira turbinas conectadas a geradores, gerando energia elétrica.",
+            "Uma usina hidroelétrica converte a energia da água em eletricidade. A água em movimento, geralmente de um rio represado, gira turbinas que estão conectadas a geradores, produzindo energia elétrica.",
+            "O funcionamento de uma usina hidroelétrica envolve a conversão da energia da água em eletricidade. A água em movimento, represada em um rio, gira turbinas conectadas a geradores, gerando energia elétrica.",
             "Uma usina hidroelétrica converte a energia da água em eletricidade. A água em movimento, geralmente de um rio represado, gira turbinas que estão conectadas a geradores, produzindo energia elétrica.",
             "O funcionamento de uma usina hidroelétrica envolve a conversão da energia da água em eletricidade. A água em movimento, represada em um rio, gira turbinas conectadas a geradores, gerando energia elétrica.",
             "Uma usina hidroelétrica converte a energia da água em eletricidade. A água em movimento, geralmente de um rio represado, gira turbinas que estão conectadas a geradores, produzindo energia elétrica.",
             "O funcionamento de uma usina hidroelétrica envolve a conversão da energia da água em eletricidade. A água em movimento, represada em um rio, gira turbinas conectadas a geradores, gerando energia elétrica."
-          
         ]
     },
     {
         "palavras_1": [
             "ramones"
         ],
-        
         "respostas": [
             "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
-  "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
-   "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
-   "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
-   "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
-   "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
-  "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
-  "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
-  "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
-  "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas."
-
+            "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
+            "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
+            "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
+            "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
+            "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
+            "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
+            "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas.",
+            "Os Ramones foram uma influente banda de punk rock formada em Nova York em 1974. Composta por membros como Joey, Johnny, Dee Dee e Tommy Ramone, a banda foi pioneira no movimento punk e é conhecida por músicas energéticas e letras simples.",
+            "Os Ramones, formados em Nova York em 1974, foram uma banda icônica de punk rock. Com integrantes como Joey, Johnny, Dee Dee e Tommy Ramone, eles foram pioneiros no movimento punk, destacando-se por músicas enérgicas e letras diretas."
         ]
     },
     {
@@ -1539,19 +1527,17 @@
             "micheal",
             "jackson"
         ],
-        
         "respostas": [
             "Michael Jackson foi um icônico cantor, compositor e dançarino americano, nascido em 1958. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
             "Nascido em 1958, Michael Jackson foi um icônico cantor, compositor e dançarino americano. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
-             "Michael Jackson foi um icônico cantor, compositor e dançarino americano, nascido em 1958. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
-             "Nascido em 1958, Michael Jackson foi um icônico cantor, compositor e dançarino americano. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
-             "Michael Jackson foi um icônico cantor, compositor e dançarino americano, nascido em 1958. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
-             "Nascido em 1958, Michael Jackson foi um icônico cantor, compositor e dançarino americano. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
+            "Michael Jackson foi um icônico cantor, compositor e dançarino americano, nascido em 1958. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
+            "Nascido em 1958, Michael Jackson foi um icônico cantor, compositor e dançarino americano. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
+            "Michael Jackson foi um icônico cantor, compositor e dançarino americano, nascido em 1958. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
+            "Nascido em 1958, Michael Jackson foi um icônico cantor, compositor e dançarino americano. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
             "Michael Jackson foi um icônico cantor, compositor e dançarino americano, nascido em 1958. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
             "Nascido em 1958, Michael Jackson foi um icônico cantor, compositor e dançarino americano. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
             "Michael Jackson foi um icônico cantor, compositor e dançarino americano, nascido em 1958. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical.",
             "Nascido em 1958, Michael Jackson foi um icônico cantor, compositor e dançarino americano. Conhecido como 'Rei do Pop', ele deixou um legado marcante na música, com álbuns influentes como 'Thriller'. Suas performances, incluindo o famoso moonwalk, o tornaram uma lenda da indústria musical."
-          
         ]
     },
     {
@@ -1574,15 +1560,14 @@
         "respostas": [
             "O primeiro telefone foi inventado por Alexander Graham Bell em 1876.",
             "Em 1876, Alexander Graham Bell inventou o primeiro telefone.",
-             "O primeiro telefone foi inventado por Alexander Graham Bell em 1876.",
-             "Em 1876, Alexander Graham Bell inventou o primeiro telefone.",
-             "O primeiro telefone foi inventado por Alexander Graham Bell em 1876.",
-             "Em 1876, Alexander Graham Bell inventou o primeiro telefone.",
+            "O primeiro telefone foi inventado por Alexander Graham Bell em 1876.",
+            "Em 1876, Alexander Graham Bell inventou o primeiro telefone.",
+            "O primeiro telefone foi inventado por Alexander Graham Bell em 1876.",
+            "Em 1876, Alexander Graham Bell inventou o primeiro telefone.",
             "O primeiro telefone foi inventado por Alexander Graham Bell em 1876.",
             "Em 1876, Alexander Graham Bell inventou o primeiro telefone.",
             "O primeiro telefone foi inventado por Alexander Graham Bell em 1876.",
             "Em 1876, Alexander Graham Bell inventou o primeiro telefone."
-          
         ]
     },
     {
@@ -1591,14 +1576,13 @@
             "mais",
             "rico"
         ],
-       
         "respostas": [
             "Os Estados Unidos são considerados o país mais rico do mundo.",
             "Considera-se que os Estados Unidos sejam o país mais rico do mundo.",
-             "Os Estados Unidos são considerados o país mais rico do mundo.",
-             "Considera-se que os Estados Unidos sejam o país mais rico do mundo.",
-             "Os Estados Unidos são considerados o país mais rico do mundo.",
-             "Considera-se que os Estados Unidos sejam o país mais rico do mundo.",
+            "Os Estados Unidos são considerados o país mais rico do mundo.",
+            "Considera-se que os Estados Unidos sejam o país mais rico do mundo.",
+            "Os Estados Unidos são considerados o país mais rico do mundo.",
+            "Considera-se que os Estados Unidos sejam o país mais rico do mundo.",
             "Os Estados Unidos são considerados o país mais rico do mundo.",
             "Considera-se que os Estados Unidos sejam o país mais rico do mundo.",
             "Os Estados Unidos são considerados o país mais rico do mundo."
@@ -1610,19 +1594,17 @@
             "mais",
             "pobre"
         ],
-        
         "respostas": [
             "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
-  "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
-   "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
-   "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
-   "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
-   "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
-  "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
-  "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
-  "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
-  "O Burundi é frequentemente citado como um dos países mais pobres do mundo."
-
+            "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
+            "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
+            "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
+            "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
+            "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
+            "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
+            "O Burundi é frequentemente citado como um dos países mais pobres do mundo.",
+            "Muitos consideram o Burundi como um dos países mais pobres do mundo.",
+            "O Burundi é frequentemente citado como um dos países mais pobres do mundo."
         ]
     },
     {
@@ -1631,19 +1613,17 @@
             "mais",
             "pobre"
         ],
-        
         "respostas": [
             "Não é possível determinar a pessoa mais pobre do mundo, pois a pobreza é um fenômeno complexo e variável.",
             "A identificação da pessoa mais pobre do mundo é impossível devido à complexidade e variação da pobreza.",
-             "Não é possível determinar a pessoa mais pobre do mundo, pois a pobreza é um fenômeno complexo e variável.",
-             "A identificação da pessoa mais pobre do mundo é impossível devido à complexidade e variação da pobreza.",
-             "Não é possível determinar a pessoa mais pobre do mundo, pois a pobreza é um fenômeno complexo e variável.",
-             "A identificação da pessoa mais pobre do mundo é impossível devido à complexidade e variação da pobreza.",
+            "Não é possível determinar a pessoa mais pobre do mundo, pois a pobreza é um fenômeno complexo e variável.",
+            "A identificação da pessoa mais pobre do mundo é impossível devido à complexidade e variação da pobreza.",
+            "Não é possível determinar a pessoa mais pobre do mundo, pois a pobreza é um fenômeno complexo e variável.",
+            "A identificação da pessoa mais pobre do mundo é impossível devido à complexidade e variação da pobreza.",
             "Não é possível determinar a pessoa mais pobre do mundo, pois a pobreza é um fenômeno complexo e variável.",
             "A identificação da pessoa mais pobre do mundo é impossível devido à complexidade e variação da pobreza.",
             "Não é possível determinar a pessoa mais pobre do mundo, pois a pobreza é um fenômeno complexo e variável.",
             "A identificação da pessoa mais pobre do mundo é impossível devido à complexidade e variação da pobreza."
-          
         ]
     },
     {
@@ -1655,19 +1635,17 @@
             "tecladista",
             "melhor"
         ],
-        
         "respostas": [
             "A escolha do melhor tecladista é subjetiva, mas muitos consideram Rick Wakeman, conhecido por seu trabalho com a banda Yes, como um dos mais lendários da história da música.",
             "Na perspectiva subjetiva, Rick Wakeman, conhecido por seu trabalho com a banda Yes, é frequentemente considerado um dos tecladistas mais lendários da história da música.",
-             "A escolha do melhor tecladista é subjetiva, mas muitos consideram Rick Wakeman, conhecido por seu trabalho com a banda Yes, como um dos mais lendários da história da música.",
-             "Na perspectiva subjetiva, Rick Wakeman, conhecido por seu trabalho com a banda Yes, é frequentemente considerado um dos tecladistas mais lendários da história da música.",
-             "A escolha do melhor tecladista é subjetiva, mas muitos consideram Rick Wakeman, conhecido por seu trabalho com a banda Yes, como um dos mais lendários da história da música.",
-             "Na perspectiva subjetiva, Rick Wakeman, conhecido por seu trabalho com a banda Yes, é frequentemente considerado um dos tecladistas mais lendários da história da música.",
+            "A escolha do melhor tecladista é subjetiva, mas muitos consideram Rick Wakeman, conhecido por seu trabalho com a banda Yes, como um dos mais lendários da história da música.",
+            "Na perspectiva subjetiva, Rick Wakeman, conhecido por seu trabalho com a banda Yes, é frequentemente considerado um dos tecladistas mais lendários da história da música.",
+            "A escolha do melhor tecladista é subjetiva, mas muitos consideram Rick Wakeman, conhecido por seu trabalho com a banda Yes, como um dos mais lendários da história da música.",
+            "Na perspectiva subjetiva, Rick Wakeman, conhecido por seu trabalho com a banda Yes, é frequentemente considerado um dos tecladistas mais lendários da história da música.",
             "A escolha do melhor tecladista é subjetiva, mas muitos consideram Rick Wakeman, conhecido por seu trabalho com a banda Yes, como um dos mais lendários da história da música.",
             "Na perspectiva subjetiva, Rick Wakeman, conhecido por seu trabalho com a banda Yes, é frequentemente considerado um dos tecladistas mais lendários da história da música.",
             "A escolha do melhor tecladista é subjetiva, mas muitos consideram Rick Wakeman, conhecido por seu trabalho com a banda Yes, como um dos mais lendários da história da música.",
             "Na perspectiva subjetiva, Rick Wakeman, conhecido por seu trabalho com a banda Yes, é frequentemente considerado um dos tecladistas mais lendários da história da música."
-          
         ]
     },
     {
@@ -1679,19 +1657,17 @@
             "baixista",
             "melhor"
         ],
-        
         "respostas": [
             "A avaliação do melhor baixista é subjetiva, mas muitos consideram Jaco Pastorius como um dos mais lendários da história da música.",
             "Na perspectiva subjetiva, Jaco Pastorius é frequentemente considerado um dos baixistas mais lendários da história da música.",
-             "A avaliação do melhor baixista é subjetiva, mas muitos consideram Jaco Pastorius como um dos mais lendários da história da música.",
-             "Na perspectiva subjetiva, Jaco Pastorius é frequentemente considerado um dos baixistas mais lendários da história da música.",
-             "A avaliação do melhor baixista é subjetiva, mas muitos consideram Jaco Pastorius como um dos mais lendários da história da música.",
-             "Na perspectiva subjetiva, Jaco Pastorius é frequentemente considerado um dos baixistas mais lendários da história da música.",
+            "A avaliação do melhor baixista é subjetiva, mas muitos consideram Jaco Pastorius como um dos mais lendários da história da música.",
+            "Na perspectiva subjetiva, Jaco Pastorius é frequentemente considerado um dos baixistas mais lendários da história da música.",
+            "A avaliação do melhor baixista é subjetiva, mas muitos consideram Jaco Pastorius como um dos mais lendários da história da música.",
+            "Na perspectiva subjetiva, Jaco Pastorius é frequentemente considerado um dos baixistas mais lendários da história da música.",
             "A avaliação do melhor baixista é subjetiva, mas muitos consideram Jaco Pastorius como um dos mais lendários da história da música.",
             "Na perspectiva subjetiva, Jaco Pastorius é frequentemente considerado um dos baixistas mais lendários da história da música.",
             "A avaliação do melhor baixista é subjetiva, mas muitos consideram Jaco Pastorius como um dos mais lendários da história da música.",
             "Na perspectiva subjetiva, Jaco Pastorius é frequentemente considerado um dos baixistas mais lendários da história da música."
-          
         ]
     }
 ]
