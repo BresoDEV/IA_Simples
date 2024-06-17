@@ -1706,7 +1706,7 @@ function gerarImagem(p) {
          
         fetch('https://picsum.photos/200/200')
         .then(response =>{
-            
+            console.log(response.url)
 			//if (response.url.toLowerCase().includes('http')) {
 						//return 'Aqui esta: <br><img src=\"'+response.url+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
 						return response.url
