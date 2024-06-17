@@ -1709,8 +1709,8 @@ function gerarImagem(p) {
             console.log(response.url)
             console.log(typeof(response.url))
 			//if (response.url.toLowerCase().includes('http')) {
-						//return 'Aqui esta: <br><img src=\"'+response.url+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
-						return response.url
+						 return 'Aqui esta: <br><a href=\"'+response.url+'" alt=\"\" >Link</a>'
+						//return response.url
 				//	}
 					//else{
 						//return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
