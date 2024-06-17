@@ -459,6 +459,7 @@ var loop = setInterval(() => {
         console.log('Neuronios carregados com sucesso!!')
         console.log('Cerebros carregados: ' + quantCerebros + ' ')
         console.log('Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos')
+        console.log('Versao 1')
 		
 		
 		 
