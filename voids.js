@@ -1708,7 +1708,8 @@ function gerarImagem(p) {
         .then(response =>{
             
 			//if (response.url.toLowerCase().includes('http')) {
-						return 'Aqui esta: <br><img src=\"'+response.url+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
+						//return 'Aqui esta: <br><img src=\"'+response.url+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
+						return response.url
 				//	}
 					//else{
 						//return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
