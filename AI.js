@@ -98,13 +98,7 @@ function AI(pergunta = '') {
             console.log(response.url)
             console.log(typeof(response.url))
 			imagem = response.url
-			//if (response.url.toLowerCase().includes('http')) {
-						 return 'Aqui esta: <br><a href=\"'+response.url+'" alt=\"\" >Link</a>'
-						//return response.url
-				//	}
-					//else{
-						//return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
-					//}
+			return 'Aqui esta: <br><img src=\"'+imagem+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
 		
         })
 		return 'Aqui esta: <br><a href=\"'+imagem+'" alt=\"\" >Link</a>'
