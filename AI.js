@@ -461,28 +461,7 @@ var loop = setInterval(() => {
         console.log('Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos')
 		
 		
-		
-		var fotolink="";
-		var resposta="";
-        fetch('https://picsum.photos/200/200')
-        .then(response =>{
-            
-			console.log(response.url)
-			setTimeout(()=>{
-				fotolink=response.url;
-					if (fotolink.toLowerCase().includes('http')) {
-						resposta= 'Aqui esta: <br><img src=\"'+fotolink+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
-						console.log(resposta)
-					}
-					else{
-						resposta= 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
-						console.log(resposta)
-					}
-			},2000)
-		
-        })
-		
-        console.log(resposta)
+		 
 
         
     }
