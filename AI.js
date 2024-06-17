@@ -92,7 +92,7 @@ function AI(pergunta = '') {
 
     //gerar imagem aleatooria
     if (QuerGerarImagens(pergunta)) {
-        return addPalavrasChave(gerarImagem(pergunta));
+        return gerarImagem(pergunta);
     }
 
     //hashs 
