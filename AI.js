@@ -76,17 +76,42 @@ function AI(pergunta = '') {
         //-nomeUsuario-
         return addPalavrasChave(`Além de responder perguntas, consigo fazer algumas outras coisas interessantes-nomeUsuario-. Vou listar algumas:<br>
         <br>- Adicionar lembretes
-        <br>- Fazer contas matemáticas
-        <br>- Gerar senhas pra você
+        <br>- Fazer contas matemáticas (envie a conta apenas. Ex: 1+1)
+        <br>- Gerar senhas pra você (pode enviar o número de caracteres também)
         <br>- Gerador de lero-lero (textos sem sentido)
-        <br>- Converter fontes para DarkFont e MiniFont
+        <br>- Converter fontes para DarkFont e MiniFont (dark font Meu texto) ou (mini font Meu texto)
         <br>- Posso gerar mensagens de bom dia, boa noite, de amor, amizade, etc...
         <br>- Gerar textos Lorem
         <br>- Posso gerar nome de pessoas, personagem, nicknames e locais(cidades,paises,etc)
+        <br>- Posso gerar um audio falso, pra enganar seus amigos
+        <br>- Posso transformar textos, link, números,etc.. em QR Codes
+        <br>- Posso transformar textosem hashs (Envie o texto entre parênteses. Ex: Quero o hash de (Texto))
         `)
     }
 
 
+    //gerar imagem aleatooria
+    if (QuerGerarImagens(pergunta)) {
+        return addPalavrasChave(gerarImagem(pergunta));
+    }
+
+    //hashs 
+    if (pergunta.toLowerCase().includes('hash')) {
+        if (pergunta.toLowerCase().includes('('))
+        {
+            return addPalavrasChave(joaat(textoEntreParentese(pergunta)));
+        }
+        else{
+            return addPalavrasChave('Envie o texto entre parênteses-nomeUsuario-. <br>Ex: <br>Quero o hash de (Texto)')
+        }
+    }
+    //audio fake 
+    if (pergunta.toLowerCase().includes('audio') &&
+        pergunta.toLowerCase().includes('fake') ||
+        pergunta.toLowerCase().includes('audio') &&
+        pergunta.toLowerCase().includes('falso')) {
+        return AudioFake();
+    }
     //calculadora
     if (EnviouUmaConta(pergunta)) {
         return addPalavrasChave(Calcular(pergunta));
@@ -434,6 +459,8 @@ var loop = setInterval(() => {
         console.log('Neuronios carregados com sucesso!!')
         console.log('Cerebros carregados: ' + quantCerebros + ' ')
         console.log('Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos')
+
+        
     }
 }, 1000);
 

@@ -998,7 +998,7 @@
             "implementacao"
         ],
         "respostas": [
-            "Pra implementar nosso script no seu site, apenas adicione essa linha no seu HTML, dentro da tag HEAD:<br><br><textarea class='texticulo' cols='30'><script src='AI.js'></script></textarea><br><br>Pra receber a resposta, utilize o seguinte codigo Javascript:<br><br><textarea class='texticulo' cols='30'>var resposta = AI('Quem é Mr. Bean?');\nconsole.log(resposta);</textarea>"
+            "Pra implementar nosso script no seu site, apenas adicione essa linha no seu HTML, dentro da tag HEAD:<br><br><textarea class='texticulo' cols='30'><script src='AI.js'></script></textarea><br><br>Pra receber a resposta, utilize o seguinte codigo Javascript:<br><br><textarea class='texticulo' cols='30' rows='5'>var resposta = AI('Quem é Mr. Bean?');\nconsole.log(resposta);</textarea>"
         ]
     },
     {

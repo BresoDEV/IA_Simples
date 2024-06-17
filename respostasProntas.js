@@ -320,3 +320,26 @@ var emotionsVelocidade = [
 function escolherEmotionAleatorio(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
+
+function AudioFake(){
+    var play = '&#9654; &#149; &#4170;&#4170;'
+
+    var audio=[
+        '&#4170;',
+        '&#124;',
+        '&#124;',
+        '&#124;',
+        '&#4171;',
+    ]
+
+    var f = play;
+    for (let index = 0; index < 30; index++) {
+
+        f += audio[Math.floor(Math.random()* audio.length)];
+    }
+    f += ' &#149; '+Math.floor(Math.random()* 2)+':'+(Math.floor(Math.random()* 30)+10);
+    //var cd = '<br><br>Se quiser copiar e enviar pra alguem, aqui está o código:<br><br><textarea>'+f+'</textarea>';
+    return f;
+
+
+}

@@ -1637,7 +1637,7 @@ function DisseOI(p) {
     return tem;
 }
 
-function Oque_Sou_Capaz_De_Fazer(p){
+function Oque_Sou_Capaz_De_Fazer(p) {
 
     p = processarPergunta(p);
 
@@ -1654,7 +1654,7 @@ function Oque_Sou_Capaz_De_Fazer(p){
         "responde",
         "executa",
     ]
-    
+
     let tem = false
     criar.forEach(c => {
         local.forEach(l => {
@@ -1666,3 +1666,87 @@ function Oque_Sou_Capaz_De_Fazer(p){
     });
     return tem;
 }
+
+
+//---------gerarImagens--------
+function QuerGerarImagens(p) {
+
+    p = processarPergunta(p);
+
+    let criar = [
+        "desenhe",
+        "crie",
+        "gere",
+        "gera",
+    ]
+    let local = [
+        "foto",
+        "imagem",
+        "imagen",
+        "img",
+    ]
+
+    let tem = false
+    criar.forEach(c => {
+        local.forEach(l => {
+            //console.log(c + ' ' + l)
+            if (p.toLowerCase().includes(c) && p.toLowerCase().includes(l)) {
+                tem = true;
+            }
+        });
+    });
+    return tem;
+}
+
+
+function gerarImagem(p) {
+    p = processarPergunta(p);
+    if (p.toLowerCase().includes('aleatori')) 
+    {
+        var fotolink="";
+        fetch('https://picsum.photos/200/200')
+        .then(response =>{
+            fotolink=response.url;
+        })
+        if (fotolink.toLowerCase().includes('http')) {
+            return '<img src=\"'+fotolink+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
+        }
+        else{
+            return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
+        }
+        
+    }
+    else
+    {
+        let msgs = [
+            "Lamento-nomeUsuario-, mas não consigo gerar imagens sobre um tema específico, porém, posso criar uma imagem aleatória",
+            "Infelizmente-nomeUsuario-, não consigo gerar imagens sobre um tema específico, porém, posso criar uma imagem aleatória",
+            
+        ]
+        var indexnome = Math.floor(Math.random() * msgs.length);
+        return msgs[indexnome];
+    }
+}
+
+function textoEntreParentese(t){
+    const re = /\(([^)]+)\)/;
+    t = re.exec(t)[1];
+    return t;
+}
+
+function joaat(s) {
+    s = s.toLowerCase()
+    let h = 0;
+    for (let i = 0; i < s.length; i++) {
+        h += s.charCodeAt(i);
+        h += (h << 10);
+        h ^= (h >> 6);
+    }
+    h += (h << 3);
+    h ^= (h >> 11);
+    h += (h << 15);
+    h = h >>> 0
+    return 'Certo-nomeUsuario-, o hash de <b>'+s+'</b> é <b>0x' + h.toString(16).toUpperCase()+'</b>';
+}
+
+

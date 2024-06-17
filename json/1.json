@@ -1,6 +1,33 @@
 [
     {
         "palavras_1": [
+            "eduardo",
+            "amor",
+            "vida"
+        ],
+        "palavras_2": [
+            "eduardo",
+            "amor"
+        ],
+        "palavras_3": [
+            "eduardo",
+            "amor"
+        ],
+        "respostas": [
+            "Boa pergunta-nomeUsuario-. O amor da vida do Eduardo(meu criador), é a sua esposa Julyely, e a sua filha Milena &#128151;&#128151;"
+        ]
+    },
+     {
+        "palavras_1": [
+            "codigo",
+            "barra"
+        ],
+        "respostas": [
+            "Desculpe-nomeUsuario-, mas não consigo gerar codigoos de barras, mas consigo gerar QR Codes.<br>Caso queira, apenas digite seu texto que queira converter, entre parênteses.<br>Ex:<br><b>Crie um qrcode (texto qualquer)</b><br>ou<br><b>Quero um qrcode sobre esse texto (texto qualquer)</b><br><br>Lembrando, que essas são apenas algumas variações de ideias, você pode escrever do seu jeito, mas não esqueça dos parênteses, e mencionar que deseja um QR Code&#128512;"
+        ]
+    },
+    {
+        "palavras_1": [
             "alerta",
             "javascript"
         ],
@@ -668,44 +695,6 @@
             "Não posso auxiliar na criação de vírus de computador, pois isso é prejudicial e vai contra as políticas éticas.",
             "É contra as diretrizes éticas fornecer informações sobre a criação de vírus de computador. Não posso apoiar atividades prejudiciais.",
             "Não estou autorizado a fornecer orientações sobre a criação de vírus de computador, pois isso é prejudicial e vai contra princípios éticos."
-        ]
-    },
-    {
-        "palavras_1": [
-            "desenhe",
-            "imagem"
-        ],
-        "palavras_2": [
-            "crie",
-            "imagem"
-        ],
-        "palavras_3": [
-            "desenhe",
-            "foto"
-        ],
-        "palavras_4": [
-            "crie",
-            "foto"
-        ],
-        "palavras_5": [
-            "gere",
-            "foto"
-        ],
-        "palavras_6": [
-            "gere",
-            "imagem"
-        ],
-        "respostas": [
-            "Lamento, mas não possuo a capacidade de gerar imagens. Recomendo o uso de serviços especializados, como Midjourney, Leonardo.AI ou DALL-E 2.0, que são excelentes e gratuitos.",
-            "Infelizmente, não consigo criar imagens. Sugiro utilizar serviços como Midjourney, Leonardo.AI ou DALL-E 2.0, que são ferramentas excelentes e gratuitas.",
-            "Não tenho a habilidade de gerar imagens. Recomendo o uso de outras ferramentas, como Midjourney, Leonardo.AI ou DALL-E 2.0, que são ótimas e gratuitas.",
-            "Lamento, mas não posso criar imagens. Seria útil explorar serviços como Midjourney, Leonardo.AI ou DALL-E 2.0, que são recursos excelentes e gratuitos.",
-            "Lamento informar que não consigo gerar imagens. Recomendo a utilização de serviços como Midjourney, Leonardo.AI ou DALL-E 2.0, que são ótimos e gratuitos.",
-            "Não tenho a capacidade de criar imagens. Sugiro explorar alternativas como Midjourney, Leonardo.AI ou DALL-E 2.0, que são ferramentas excelentes e gratuitas.",
-            "Minhas habilidades não incluem a geração de imagens. Recomendaria o uso de serviços como Midjourney, Leonardo.AI ou DALL-E 2.0, que são recursos excelentes e gratuitos.",
-            "Infelizmente, não consigo gerar imagens. Sugiro considerar o uso de ferramentas como Midjourney, Leonardo.AI ou DALL-E 2.0, que são excelentes e gratuitas.",
-            "Lamento, mas não posso criar imagens. Seria interessante explorar serviços como Midjourney, Leonardo.AI ou DALL-E 2.0, que são recursos excelentes e gratuitos.",
-            "Não tenho a capacidade de gerar imagens. Recomendo a utilização de serviços como Midjourney, Leonardo.AI ou DALL-E 2.0, que são ótimos e gratuitos."
         ]
     },
     {
