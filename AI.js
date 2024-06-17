@@ -94,14 +94,14 @@ function AI(pergunta = '') {
     if (QuerGerarImagens(pergunta)) {
 		var imagem = ''
         fetch('https://picsum.photos/200/200')
-        .then(response =>{
-            console.log(response.url)
-            console.log(typeof(response.url))
+        .then(response =>{ 
 			imagem = response.url
-			return 'Aqui esta: <br><img src="'+imagem+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
+			console.log(imagem)
+			console.log('Aqui esta: <br><img src="'+imagem+'" style="width:50%" >')
+			return 'Aqui esta: <br><img src="'+imagem+'" style="width:50%" >'
 		
         })
-		return 'Aqui esta: <br><img src="'+imagem+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
+		return 'Aqui esta: <br><img src="'+imagem+'" style="width:50%" >'
     }
 
     //hashs 
@@ -468,7 +468,7 @@ var loop = setInterval(() => {
         console.log('Neuronios carregados com sucesso!!')
         console.log('Cerebros carregados: ' + quantCerebros + ' ')
         console.log('Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos')
-        console.log('Versao 10')
+        console.log('Versao 11')
 		
 		
 		 
