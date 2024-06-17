@@ -9,38 +9,46 @@
             display: block;
             margin: 10px auto;
         }
-        
+        #message {
+            text-align: center;
+            color: red;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <h2></h2>
-    <video id="video" width="320" height="440" autoplay></video>
+    <h2>Capture Profile Picture</h2>
+    <p id="instruction">Clique em "Permitir" para usar sua câmera.</p>
+    <video id="video" width="320" height="240" autoplay></video>
     <button id="snap">Capture</button>
-    <canvas id="canvas" width="320" height="440"></canvas>
+    <canvas id="canvas" width="320" height="240"></canvas>
+    <p id="message"></p>
+
     <script>
-        // script.js
-(function() {
-    const video = document.getElementById('video');
-    const canvas = document.getElementById('canvas');
-    const snap = document.getElementById('snap');
-    const context = canvas.getContext('2d');
+        (function() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const snap = document.getElementById('snap');
+            const context = canvas.getContext('2d');
+            const message = document.getElementById('message');
 
-    // Acessar a câmera
-    navigator.mediaDevices.getUserMedia({ video: true })
-        .then(stream => {
-            video.srcObject = stream;
-            video.play();
-        })
-        .catch(err => {
-            console.error("Erro ao acessar a câmera: ", err);
-        });
+            // Acessar a câmera
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    video.srcObject = stream;
+                    video.play();
+                    document.getElementById('instruction').style.display = 'none';
+                })
+                .catch(err => {
+                    console.error("Erro ao acessar a câmera: ", err);
+                    message.textContent = 'Não foi possível acessar a câmera. Verifique as permissões do seu navegador e tente novamente.';
+                });
 
-    context.drawImage(video, 0, 0, canvas.width, canvas.height);
-    // Capturar a imagem
-    snap.addEventListener('click', () => {
-        
-    });
-})();
+            // Capturar a imagem
+            snap.addEventListener('click', () => {
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            });
+        })();
     </script>
 </body>
 </html>
