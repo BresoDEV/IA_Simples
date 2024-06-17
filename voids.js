@@ -1707,12 +1707,12 @@ function gerarImagem(p) {
         fetch('https://picsum.photos/200/200')
         .then(response =>{
             
-			if (response.url.toLowerCase().includes('http')) {
+			//if (response.url.toLowerCase().includes('http')) {
 						return 'Aqui esta: <br><img src=\"'+response.url+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
-					}
-					else{
-						return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
-					}
+				//	}
+					//else{
+						//return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
+					//}
 		
         })
         
