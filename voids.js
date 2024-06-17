@@ -1706,9 +1706,10 @@ function gerarImagem(p) {
         var fotolink="";
         fetch('https://picsum.photos/200/200')
         .then(response =>{
-            fotolink=response.url;
-        })
-        setTimeout(()=>{
+            
+			
+			setTimeout(()=>{
+				fotolink=response.url;
 			if (fotolink.toLowerCase().includes('http')) {
             return '<img src=\"'+fotolink+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
         }
@@ -1716,6 +1717,9 @@ function gerarImagem(p) {
             return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
         }
 		},2000)
+		
+        })
+        
         
     }
     else
