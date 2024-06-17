@@ -1711,7 +1711,7 @@ function gerarImagem(p) {
 			setTimeout(()=>{
 				fotolink=response.url;
 			if (fotolink.toLowerCase().includes('http')) {
-            return '<img src=\"'+fotolink+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
+            return 'Aqui esta: <br><img src=\"'+fotolink+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
         }
         else{
             return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
