@@ -1,10 +1,10 @@
 
 
 //Includes adicionais
-document.write('<script src="https://bresodev.github.io/IA_Simples/dev.js"></script>')
-document.write('<script src="https://bresodev.github.io/IA_Simples/respostasProntas.js"></script>')
-document.write('<script src="https://bresodev.github.io/IA_Simples/addChat.js"></script>')
-document.write('<script src="https://bresodev.github.io/IA_Simples/voids.js"></script>')
+document.write('<script src="dev.js"></script>')
+document.write('<script src="respostasProntas.js"></script>')
+document.write('<script src="addChat.js"></script>')
+document.write('<script src="voids.js"></script>')
 
 
 var neuronio = []
@@ -30,7 +30,7 @@ function loadJSON(arq) {
 }
 
 function loadJSONblacklist() {
-    return fetch('https://bresodev.github.io/IA_Simples/json/blacklist.json')
+    return fetch('json/blacklist.json')
         .then(response => {
             if (!response.ok) {
 
@@ -47,7 +47,7 @@ loadJSONblacklist()
 
 for (let i = 0; i < 10; i++) {
     Promise.all([
-        loadJSON('https://bresodev.github.io/IA_Simples/json/' + i + '.json')
+        loadJSON('json/' + i + '.json')
     ]).then(() => {
         //
     })
