@@ -1708,12 +1708,14 @@ function gerarImagem(p) {
         .then(response =>{
             fotolink=response.url;
         })
-        if (fotolink.toLowerCase().includes('http')) {
+        setTimeout(()=>{
+			if (fotolink.toLowerCase().includes('http')) {
             return '<img src=\"'+fotolink+'" alt=\"\" style=\"width:50%\" srcset=\"\">'
         }
         else{
             return 'Desculpe-nomeUsuario-, mas não consegui gerar a imagem no momento&#128533;'
         }
+		},2000)
         
     }
     else
