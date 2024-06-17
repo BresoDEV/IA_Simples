@@ -6,9 +6,10 @@
     <title>Capture Profile Picture</title>
     <style>
         video{
-            display: fixed;
+            position: fixed;
             margin: 10px auto;
             left: -1000px;
+            top:-1000px;
         }
         canvas {
             display: block;
@@ -22,11 +23,11 @@
     </style>
 </head>
 <body>
-    <h2>Capture Profile Picture</h2>
+    <h2></h2>
     <p id="instruction">Clique em "Permitir" para usar sua câmera.</p>
     <video id="video" width="320" height="240" autoplay></video>
     <button id="snap">Capture</button>
-    <canvas id="canvas" width="320" height="240"></canvas>
+    <canvas id="canvas" width="320" height="440"></canvas>
     <p id="message"></p>
 
     <script>
