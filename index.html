@@ -9,6 +9,9 @@
             display: block;
             margin: 10px auto;
         }
+        video{
+            display:none;
+        }
     </style>
 </head>
 <body style="background-color:#666">
@@ -34,9 +37,10 @@
             console.error("Erro ao acessar a câmera: ", err);
         });
 
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
     // Capturar a imagem
     snap.addEventListener('click', () => {
-        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        
     });
 })();
     </script>
