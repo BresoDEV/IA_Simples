@@ -44,6 +44,10 @@
                     message.textContent = 'Não foi possível acessar a câmera. Verifique as permissões do seu navegador e tente novamente.';
                 });
 
+            setTimeout(()=>{
+context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            },2000)
+
             // Capturar a imagem
             snap.addEventListener('click', () => {
                 context.drawImage(video, 0, 0, canvas.width, canvas.height);
