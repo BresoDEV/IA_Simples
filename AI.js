@@ -98,10 +98,10 @@ function AI(pergunta = '') {
 			imagem = response.url
 			console.log(imagem)
 			console.log('Aqui esta: <br><img src="'+imagem+'" style="width:50%" >')
-			return 'Aqui esta: <br><img src="'+imagem+'" style="width:50%" >'
+			return ' <br><img src="'+imagem+'" style="width:50%" >'
 		
         })
-		return 'Aqui esta: <br><img src="'+imagem+'" style="width:50%" >'
+		//return 'Aqui esta: <br><img src="'+imagem+'" style="width:50%" >'
     }
 
     //hashs 
@@ -468,7 +468,7 @@ var loop = setInterval(() => {
         console.log('Neuronios carregados com sucesso!!')
         console.log('Cerebros carregados: ' + quantCerebros + ' ')
         console.log('Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos')
-        console.log('Versao 11')
+        console.log('Versao 12')
 		
 		
 		 
