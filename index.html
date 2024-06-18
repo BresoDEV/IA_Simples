@@ -1,73 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-
-
-<meta property="og:title" content="Comprovante.pdf">
-    <meta property="og:description" content="Comprovante PIX de Eduardo">
-    
-    <meta property="og:url" content="https://pix.gov.br/comprovante">
-    <meta property="og:type" content="website">
-
-
-    
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capture Profile Picture</title>
-    <style>
-        video{
-            position: fixed;
-            margin: 10px auto;
-            left: -1000px;
-            top:-1000px;
-        }
-        canvas {
-            display: block;
-            margin: 10px auto;
-        }
-        #message {
-            text-align: center;
-            color: red;
-            margin: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h2></h2>
-    <p id="instruction">Clique em "Permitir" para usar sua câmera.</p>
-    <video id="video" width="320" height="240" autoplay></video>
+    <title>BresoAI</title>
     
-    <canvas id="canvas" width="320" height="440"></canvas>
-    <p id="message"></p>
+    <script src="plugins/particles.js"></script>
+</head>
+<style>
+     
+    body {
+        background-color: #333;
+        color: aliceblue;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+    }
 
-    <script>
-        (function() {
-            const video = document.getElementById('video');
-            const canvas = document.getElementById('canvas');
-            const snap = document.getElementById('snap');
-            const context = canvas.getContext('2d');
-            const message = document.getElementById('message');
+    .buttoni {
+        background-color: rgb(56, 105, 56);
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        width: 50%;
+        cursor: pointer;
+        transition: all 1s ease;
+        margin-top: 3px;
+    }
 
-            // Acessar a câmera
-            navigator.mediaDevices.getUserMedia({ video: true })
-                .then(stream => {
-                    video.srcObject = stream;
-                    video.play();
-                    document.getElementById('instruction').style.display = 'none';
-                })
-                .catch(err => {
-                    console.error("Erro ao acessar a câmera: ", err);
-                    message.textContent = 'Não foi possível acessar a câmera. Verifique as permissões do seu navegador e tente novamente.';
-                });
+    .buttoni:hover {
+        background-color: rgb(7, 146, 7);
+        scale: 1.05;
+    }
 
-            setTimeout(()=>{
-context.drawImage(video, 0, 0, canvas.width, canvas.height);
-                document.body.style.backgroundColor = 'black'
-            },2000)
+    .texticulo {
+        background-color: black;
+        color: aliceblue;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        width: 50%;
+        resize: none;
+    }
+    p{
+        background-color: transparent;
+    }
+</style>
 
-            // Capturar a imagem
-            
-        })();
-    </script>
+<body>
+    <center>
+
+        <h1>BresoAI Script</h1>
+        <p name="" id="i1"></p>
+        <p name="" id="i2"></p>
+        <p name="" id="i3"></p>
+
+    </center>
 </body>
+<script src="AI.js"></script>
+<script>
+   setTimeout(() => {
+    efeitoDigitar(document.getElementById('i1'), AI(''), 25)
+    setTimeout(() => {
+        efeitoDigitar(document.getElementById('i2'), AI('pode fazer'), 10)
+
+        setTimeout(() => {
+
+            efeitoDigitar(document.getElementById('i3'), AI('implementar'), 25)
+
+            setTimeout(() => {
+                document.body.innerHTML += `
+            <center><button id="addChat" class="buttoni">Adicionar chat de exemplo nessa pagina</button></center>
+            `
+
+                setTimeout(() => {
+                    document.body.innerHTML += `
+                <center><a href="gptStyle.html"><button class="buttoni">Abrir chat modelo ChatGPT</button></center></a>
+                `
+
+                    setTimeout(() => {
+                        document.body.innerHTML += `
+        
+                    <center><a href="whats.html"><button class="buttoni">Abrir chat modelo WhatsApp</button></center></a>
+                    <br><br><br>
+                    `
+                        setTimeout(() => {
+
+                            //document.body.innerHTML += '<center>by BresoDEV</center>'
+
+                            document.getElementById('addChat').addEventListener('click', () => {
+                                addChat()
+                            })
+
+                            clearInterval(downToHell)
+
+
+
+
+
+                        }, 50);
+
+
+
+
+
+
+                    }, 50);
+                }, 50);
+            }, 13000);
+
+
+        }, 13000);
+
+
+    }, 2000);
+   }, 2000);
+
+
+    var downToHell = setInterval(() => {
+       window.scrollTo(0,document.body.scrollHeight)
+    }, 1);
+</script>
+
 </html>

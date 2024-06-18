@@ -5,6 +5,7 @@ document.write('<script src="dev.js"></script>')
 document.write('<script src="respostasProntas.js"></script>')
 document.write('<script src="addChat.js"></script>')
 document.write('<script src="voids.js"></script>')
+document.write('<script src="plugins/qrcode.js"></script>')
 
 
 var neuronio = []
@@ -76,41 +77,43 @@ function AI(pergunta = '') {
         //-nomeUsuario-
         return addPalavrasChave(`Além de responder perguntas, consigo fazer algumas outras coisas interessantes-nomeUsuario-. Vou listar algumas:<br>
         <br>- Adicionar lembretes
-        <br>- Fazer contas matemáticas (envie a conta apenas. Ex: 1+1)
+        <br>- Fazer contas matemáticas (envie a conta apenas. Ex: <b>1+1</b>)
         <br>- Gerar senhas pra você (pode enviar o número de caracteres também)
         <br>- Gerador de lero-lero (textos sem sentido)
-        <br>- Converter fontes para DarkFont e MiniFont (dark font Meu texto) ou (mini font Meu texto)
+        <br>- Converter fontes para DarkFont e MiniFont (<b>dark font Meu texto</b>) ou (<b>mini font Meu texto</b>)
         <br>- Posso gerar mensagens de bom dia, boa noite, de amor, amizade, etc...
         <br>- Gerar textos Lorem
         <br>- Posso gerar nome de pessoas, personagem, nicknames e locais(cidades,paises,etc)
         <br>- Posso gerar um audio falso, pra enganar seus amigos
-        <br>- Posso transformar textos, link, números,etc.. em QR Codes
-        <br>- Posso transformar textosem hashs (Envie o texto entre parênteses. Ex: Quero o hash de (Texto))
+        <br>- Posso transformar textos, link, números, etc.. em QR Codes (Envie o texto entre parênteses. Ex: <b>Quero o qrcode de (Texto)</b>)
+        <br>- Posso transformar textos em hashs (Envie o texto entre parênteses. Ex: <b>Quero o hash de (Texto)</b>)
         `)
     }
 
 
     //gerar imagem aleatooria
-    if (QuerGerarImagens(pergunta)) {
-		var imagem = ''
-        fetch('https://picsum.photos/200/200')
-        .then(response =>{ 
-			imagem = response.url
-			console.log(imagem)
-			console.log('Aqui esta: <br><img src="'+imagem+'" style="width:50%" >')
-			return ' <br><img src="'+imagem+'" style="width:50%" >'
-		
-        })
-		//return 'Aqui esta: <br><img src="'+imagem+'" style="width:50%" >'
+    //if (QuerGerarImagens(pergunta)) {
+    //    return addPalavrasChave(gerarImagem(pergunta));
+    //}
+    //gerador de qr
+    if (pergunta.toLowerCase().includes('qrcode') ||
+        pergunta.toLowerCase().includes('qr code') ||
+        pergunta.toLowerCase().includes('qr-code')) {
+
+        if (pergunta.toLowerCase().includes('(')) {
+            return 'qrcode-' + textoEntreParentese(pergunta)
+        }else {
+            return addPalavrasChave('Envie o texto do QRCode entre parênteses-nomeUsuario-. <br>Ex: <br>Quero o qrcode de (Texto)')
+        }
+
     }
 
     //hashs 
     if (pergunta.toLowerCase().includes('hash')) {
-        if (pergunta.toLowerCase().includes('('))
-        {
+        if (pergunta.toLowerCase().includes('(')) {
             return addPalavrasChave(joaat(textoEntreParentese(pergunta)));
         }
-        else{
+        else {
             return addPalavrasChave('Envie o texto entre parênteses-nomeUsuario-. <br>Ex: <br>Quero o hash de (Texto)')
         }
     }
@@ -468,12 +471,9 @@ var loop = setInterval(() => {
         console.log('Neuronios carregados com sucesso!!')
         console.log('Cerebros carregados: ' + quantCerebros + ' ')
         console.log('Tamanho do neuronio atual: ' + neuronio.length + ' pensamentos')
-        console.log('Versao 12')
-		
-		
-		 
 
-        
+
+
     }
 }, 1000);
 

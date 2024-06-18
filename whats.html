@@ -379,10 +379,44 @@
     }
 
     function Responder(resposta) {
-        var conteudoAntigo = document.getElementById('corpo').innerHTML;
-        var conteudoComPergunta = conteudoAntigo + '<div class="msgBot">' + resposta + '<br><span class="hora">' + HoraAtual() + '</span></div>';
-        document.getElementById('corpo').innerHTML = conteudoComPergunta;
-        window.scrollTo(0, document.body.scrollHeight);
+
+        if (resposta.includes('qrcode-')) {
+            //gerador de qrcode
+            var rdn = Math.floor(Math.random()* 100)
+            var conteudoAntigo = document.getElementById('corpo').innerHTML;
+            var conteudoComPergunta = conteudoAntigo + '<div id="' + rdn + '" class="msgBot"><br><span class="hora">' + HoraAtual() + '</span></div>';
+            document.getElementById('corpo').innerHTML = conteudoComPergunta;
+            window.scrollTo(0, document.body.scrollHeight);
+            
+            const inputText = resposta.replace('qrcode-','');
+            //const qrcodeContainer = document.getElementById('qrcodes');
+
+            const qrcodeDiv = document.createElement('div');
+            qrcodeDiv.classList.add('qrcode-container');
+
+            const qrcodeLabel = document.createElement('p');
+            //qrcodeLabel.textContent = `QR Code ${counter}:`;
+            qrcodeDiv.appendChild(qrcodeLabel);
+
+            const qrcodeElement = document.createElement('div');
+            qrcodeDiv.appendChild(qrcodeElement);
+            //qrcodeContainer.appendChild(qrcodeDiv);
+
+            const qrcode = new QRCode(document.getElementById(rdn), {
+                text: inputText,
+                width: 500,
+                height: 500
+            });
+        }
+        else{
+            var rdn = Math.floor(Math.random()* 100)
+            var conteudoAntigo = document.getElementById('corpo').innerHTML;
+            var conteudoComPergunta = conteudoAntigo + '<div id="' + rdn + '" class="msgBot">' + resposta + '<br><span class="hora">' + HoraAtual() + '</span></div>';
+            document.getElementById('corpo').innerHTML = conteudoComPergunta;
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        
     }
 
 
